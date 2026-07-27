@@ -1,0 +1,62 @@
+---
+title: "Control de inventario en Oden POS para restaurantes"
+sidebarTitle: "Inventario"
+description: "Gestiona el stock de tus productos en Oden POS. Activa el control de inventario, descuenta automáticamente por venta y recibe alertas de stock bajo."
+---
+
+El inventario de Oden funciona con **ingredientes y recetas**: registras tus insumos (carne, tortillas, queso, vasos), le asignas una receta a cada producto del menú, y cada venta descuenta automáticamente los ingredientes usados. Es opcional: puedes usar Oden sin inventario, activarlo solo para tus insumos clave, o llevar el control completo.
+
+<Note>
+  El inventario con recetas es parte del plan Pro.
+</Note>
+
+## Cómo funciona
+
+1. **Registras tus ingredientes** con su unidad (kg, pieza, litro) y su stock actual.
+2. **Asignas recetas** a tus productos: qué ingredientes y en qué cantidad lleva cada platillo. Las recetas pueden variar por tamaño/variante e incluir los modificadores (por ejemplo, "extra queso" descuenta más queso).
+3. **Cada venta descuenta solo**: al completarse una orden, Oden descuenta los ingredientes de la receta. Si se hace un reembolso, el stock se revierte.
+4. **Te avisa cuando algo se acaba**: configuras un mínimo por ingrediente y Oden lo marca en alertas cuando el stock baja de ese nivel o se agota.
+
+<Note>
+  El descuento automático aplica a los productos con receta configurada. Un producto sin receta se vende normal, solo que no descuenta insumos.
+</Note>
+
+## Configurar tu inventario
+
+<Steps>
+  <Step title="Ve a Inventario">
+    Desde la pantalla de inicio, entra a la sección **Inventario**.
+  </Step>
+  <Step title="Registra tus ingredientes">
+    Crea cada insumo con nombre, unidad de medida, stock actual y stock mínimo. Puedes organizarlos por categorías.
+  </Step>
+  <Step title="Asigna recetas a tus productos">
+    Entra a la receta de cada producto e indica qué ingredientes consume y en qué cantidad. Si el producto tiene variantes (chico/grande), cada variante puede tener su propia receta.
+  </Step>
+</Steps>
+
+<Tip>
+  ¿Vendes algo con porciones e insumos con costo (por ejemplo, una michelada con salsa, limón, sal, chile)? Registra cada insumo con su costo, arma la receta de la michelada con las porciones que lleva, y Oden te dice cuánto te cuesta prepararla y descuenta cada ingrediente al venderla.
+</Tip>
+
+## Movimientos de inventario
+
+Desde la sección Inventario puedes registrar:
+
+- **Entradas**: cuando recibes mercancía de un proveedor, el stock sube.
+- **Salidas / ajustes**: mermas, insumos dañados o correcciones.
+- **Conteos físicos**: recorres tu almacén, ingresas lo que realmente tienes y Oden ajusta el sistema mostrando las diferencias. Buena práctica: hacerlo semanalmente.
+
+Todos los movimientos quedan en el historial con fecha y motivo.
+
+## Alertas de stock bajo
+
+Cuando un ingrediente llega a su mínimo, aparece en las **alertas de inventario**: ves de un vistazo qué está por acabarse y qué ya se agotó, y registras la entrada cuando repones.
+
+## Marcar un producto como agotado
+
+Independiente del inventario, si un platillo se acabó puedes marcarlo **agotado** con un toque desde su ficha en **Productos**. Queda deshabilitado en la pantalla de órdenes (y oculto en tu menú digital) hasta que lo reactives.
+
+<Tip>
+  ¿No quieres arrancar con todo el inventario de golpe? Empieza con tus 5-10 insumos más caros o críticos (carnes, quesos, desechables). Con eso detectas mermas donde más duele, y vas sumando ingredientes con el tiempo.
+</Tip>

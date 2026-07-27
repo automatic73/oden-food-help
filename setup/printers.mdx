@@ -1,0 +1,77 @@
+---
+title: "Conecta impresoras térmicas de tickets a Oden POS"
+sidebarTitle: "Impresoras"
+description: "Conecta impresoras térmicas Star Micronics o Bluetooth a Oden POS para imprimir tickets al cliente, comandas en cocina y cierres de caja."
+---
+
+Oden POS se conecta a impresoras térmicas para imprimir tickets de cliente, comandas de cocina, pre-cuentas y el corte de caja. La configuración tarda unos minutos desde la misma app.
+
+## ¿Necesito una impresora?
+
+**No es obligatorio.** Puedes usar el KDS (pantalla de cocina) para que los cocineros vean las órdenes en tiempo real sin imprimir nada. Si prefieres papel (para clientes, cocina o el corte), Oden es compatible con las impresoras térmicas más comunes del mercado.
+
+## Impresoras y conexiones compatibles
+
+- **Star Micronics** (por ejemplo TSP100, TSP650): por **red (LAN/Wi-Fi)** en iPhone, iPad y Android. Por **Bluetooth** solo en Android.
+- **Impresoras ESC/POS genéricas** (Xprinter, Qian, Epson TM, Rongta, Bixolon y similares): por **red (puerto 9100)** en todos los dispositivos; por **Bluetooth** o **USB** solo en Android.
+
+<Warning>
+  Si tu terminal es un iPhone o iPad, usa impresoras de **red (LAN/Wi-Fi)**. Las conexiones Bluetooth y USB solo están disponibles en dispositivos Android.
+</Warning>
+
+<Note>
+  No estás obligado a comprar una marca específica: si tu impresora térmica habla el protocolo ESC/POS (la gran mayoría de las económicas en México), lo más probable es que funcione. Escríbenos por WhatsApp si quieres verificar tu modelo antes de comprar.
+</Note>
+
+## Conectar una impresora
+
+<Steps>
+  <Step title="Ve a Configuración → Operación → Impresoras">
+    En la app, abre **Configuración**, sección **Operación**, y toca **Impresoras**.
+  </Step>
+  <Step title="Toca Agregar impresora">
+    Se abre el asistente de dos pasos: **Conectar impresora (1/2)** y **Configurar impresora (2/2)**.
+  </Step>
+  <Step title="Deja que Oden la encuentre">
+    La app escanea automáticamente la red (y Bluetooth/USB en Android) y te muestra las impresoras detectadas. Selecciona la tuya.
+  </Step>
+  <Step title="Si no aparece: conéctala por IP">
+    Puedes ingresar la dirección IP de la impresora manualmente y tocar **Probar conexión**. La IP se obtiene imprimiendo la hoja de configuración de la impresora (normalmente manteniendo presionado el botón de alimentación al encenderla). El puerto típico es el **9100**.
+  </Step>
+  <Step title="Configura y guarda">
+    En el paso 2 eliges nombre, ancho de papel (58 u 80 mm) y para qué se usa esta impresora (tickets, comandas, etc.). Haz una impresión de prueba y guarda.
+  </Step>
+</Steps>
+
+<Warning>
+  Para impresoras de red, la impresora y el celular o tablet deben estar conectados a la **misma red Wi-Fi**. Si están en redes diferentes (por ejemplo, una red de invitados), la app no podrá encontrarla.
+</Warning>
+
+## Qué se puede imprimir
+
+- **Ticket de cliente**: detalle de productos, total y cambio. Se imprime al cobrar. Puede incluir el QR de facturación y el QR de tu club de lealtad.
+- **Pre-cuenta**: la cuenta para llevar a la mesa antes de cobrar.
+- **Comanda de cocina**: solo platillos y modificadores (sin precios), para que cocina prepare. Puede separarse por estación (parrilla, barra, etc.) y por comensal.
+- **Corte de caja**: el resumen del turno al cerrar la sesión de caja.
+
+Configura qué imprime cada impresora desde su pantalla de edición. Si tienes cajón de dinero conectado a la impresora, Oden puede abrirlo automáticamente al cobrar.
+
+## Logo y personalización del ticket
+
+Desde **Configuración → Operación → Tickets** puedes activar la impresión de tu **logo** en la parte superior del ticket y elegir su tamaño, además de personalizar la información que aparece (nombre, dirección, teléfono, mensajes).
+
+<Tip>
+  El logo se imprime en blanco y negro (las impresoras térmicas no manejan color). Un logo con buen contraste, líneas gruesas y fondo claro sale mejor; los logos con mucho detalle o degradados pueden verse manchados. Si el tuyo no sale bien, prueba con una versión simplificada en blanco y negro.
+</Tip>
+
+## Impresoras por estación
+
+Si tu cocina tiene varias estaciones (parrilla, barra, fritura), puedes asignar una impresora a cada estación para que cada platillo se imprima donde se prepara. La configuración de estaciones está en **Configuración → Operación → Cocina**, y en cada categoría del menú defines a qué estación pertenece.
+
+## Cola e historial de impresión
+
+Dentro de **Impresoras** también encuentras la **Cola de impresión** (trabajos pendientes) y el **Historial de impresiones**, útiles para diagnosticar si un ticket no salió.
+
+<Tip>
+  Antes de abrir el restaurante, haz una prueba de impresión desde la app. Las impresoras de red pueden cambiar de IP si el router se reinicia; si eso pasa, actualiza la IP en la configuración de la impresora dentro de Oden. Para evitarlo, puedes fijar una IP estática a la impresora en tu router.
+</Tip>

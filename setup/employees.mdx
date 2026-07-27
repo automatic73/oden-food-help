@@ -1,0 +1,82 @@
+---
+title: "Agrega empleados, roles y PIN de acceso en Oden POS"
+sidebarTitle: "Empleados"
+description: "Crea perfiles de empleados en Oden POS, asigna roles como cajero, mesero o cocinero y configura el acceso rápido con PIN personal."
+---
+
+En Oden cada empleado tiene su propio perfil con un rol y un PIN de acceso personal. Esto te permite saber quién tomó cada orden, quién cobró cada venta, controlar qué puede usar cada persona y llevar el control de horas trabajadas, sin compartir contraseñas.
+
+## Las 3 formas de acceso (importante)
+
+Hay tres cosas distintas que suelen confundirse. Así se relacionan:
+
+| Forma de acceso | Para qué sirve | Cómo entra |
+| --- | --- | --- |
+| **Empleado con PIN** (terminal) | El personal usa la terminal del negocio (iPad/tablet) para tomar órdenes y cobrar | Su **PIN de 4 dígitos** |
+| **Comandero** (celular del mesero) | El mesero toma órdenes desde su **propio celular** | Código de 6 dígitos o QR desde Configuración → Operación → Comanderos |
+| **Turno / asistencia** | Registrar a qué hora entra y sale cada empleado | Se registra **solo** al entrar con su PIN (clock-in) y al cerrar su turno (clock-out) |
+
+Si tu mesero ya descargó la app en su celular y le aparece "restringido" o "sin permisos", lo que necesita es vincularse como **comandero**, no un PIN. El turno de caja (abrir/cerrar la caja con fondo) es otra cosa más, y vive en la sección [Caja](/operations/cash-register).
+
+## Roles disponibles
+
+Al crear un empleado eliges su rol. Los disponibles: **Propietario**, **Administrador**, **Gerente**, **Cajero**, **Servicio** (mesero), **Cocinero**, **Chef**, **Bartender**, **Barista**, **Host** y **Limpieza**.
+
+- **Propietario / Administrador**: acceso total (menú, reportes, caja, empleados, ajustes).
+- **Gerente**: operación completa, incluyendo cancelaciones y reembolsos.
+- **Cajero**: toma órdenes, cobra y maneja la caja.
+- **Servicio (mesero)**: toma órdenes y cobra. No maneja caja ni ve reportes.
+- **Cocinero / Chef / Bartender / Barista**: acceso a la pantalla de cocina (KDS).
+- **Host / Limpieza**: personal de apoyo sin acceso operativo.
+
+<Note>
+  El rol define los permisos base, pero puedes **ajustar permisos individuales** por empleado: cancelar órdenes, editar/eliminar artículos de una orden, procesar reembolsos y acceso a cocina. Así, por ejemplo, un mesero puede tener permiso de reembolso sin cambiarle el rol.
+</Note>
+
+## Crear un empleado
+
+<Steps>
+  <Step title="Ve a Empleados">
+    En la pantalla de inicio, toca **Empleados** (visible para administradores).
+  </Step>
+  <Step title="Toca Nuevo empleado">
+    Toca el botón **Nuevo empleado**.
+  </Step>
+  <Step title="Ingresa los datos">
+    Escribe el nombre (como quieres que aparezca en tickets y reportes) y elige su **rol**.
+  </Step>
+  <Step title="Asigna el PIN de 4 dígitos">
+    Escribe un PIN de cuatro números o deja que la app lo genere. Debe ser único: si ya lo usa otro empleado, la app te avisa. También puedes asignarlo después.
+  </Step>
+  <Step title="Guarda">
+    Toca **Guardar**. El empleado ya puede entrar con su PIN.
+  </Step>
+</Steps>
+
+<Warning>
+  Si un empleado olvida su PIN, el administrador lo resetea desde el perfil del empleado con **Resetear PIN**. La app genera uno nuevo y lo muestra una sola vez; guárdalo en ese momento porque después no se puede consultar.
+</Warning>
+
+## Control de turnos y asistencia
+
+Oden registra la asistencia de tu equipo automáticamente, sin checador aparte:
+
+- **Entrada (clock-in):** cuando el empleado entra con su PIN, queda registrada su hora de entrada.
+- **Salida (clock-out):** al cerrar su turno, se registra la hora de salida.
+- Puedes asignar una **tarifa por hora** o salario por empleado, y Oden calcula las horas y el pago.
+
+En **Reportes** consultas:
+
+- **Horas**: cuánto trabajó cada empleado por día o período.
+- **Nómina**: el pago estimado según horas y tarifa (exportable a CSV).
+- **Labor**: cuánto te cuesta el equipo como porcentaje de las ventas.
+
+Un administrador puede **editar un turno** (corregir una hora mal registrada); cada ajuste queda con registro de quién lo hizo.
+
+<Note>
+  Los reportes de Nómina, Horas y costo Labor son parte del plan Pro. En Básico el equipo entra con su PIN y se registra la asistencia; los reportes avanzados de nómina se desbloquean con Pro.
+</Note>
+
+<Tip>
+  Varios empleados pueden usar Oden al mismo tiempo en distintos dispositivos y todo se sincroniza en tiempo real: el mesero toma la orden en su celular, la caja la ve al instante y la cocina la recibe en el KDS.
+</Tip>

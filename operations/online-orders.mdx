@@ -1,0 +1,86 @@
+---
+title: "Pedidos en línea y QR de mesa en Oden POS"
+sidebarTitle: "Pedidos en línea y QR"
+description: "Recibe pedidos desde tu menú digital (domicilio y pickup) y deja que tus clientes ordenen desde la mesa escaneando un QR, todo conectado al POS de Oden."
+---
+
+Tu menú digital no solo se ve: recibe pedidos. Tus clientes pueden ordenar a domicilio o para recoger desde tu página web, y quienes están sentados pueden ordenar desde la mesa escaneando un QR. Todos los pedidos llegan a tu POS para que los confirmes.
+
+## Tu tienda en línea
+
+Cada negocio tiene una página pública en su propia dirección: `[tu-negocio].oden.food`. Ahí tus clientes ven tu menú con fotos y precios, y (si lo activas) arman su pedido a **domicilio** o para **recoger**.
+
+El pago es **al recibir o al recoger**: el cliente elige cómo va a pagar (efectivo, tarjeta o transferencia) pero no se le cobra en línea. Tú cobras al entregar, como siempre.
+
+### Los 3 modos de tu menú
+
+- **Recibe pedidos**: menú con carrito; los clientes ordenan.
+- **Solo mostrar**: se ve la carta pero sin ordenar (para que pasen al local o solo consulten).
+- **Cerrado**: muestra un aviso de que por ahora no se toman pedidos.
+
+## Cómo entra un pedido en línea al POS
+
+<Steps>
+  <Step title="El cliente ordena en tu página">
+    Arma su pedido a domicilio o pickup y lo envía.
+  </Step>
+  <Step title="Te llega una alerta al POS">
+    El pedido aparece como **pendiente** con una alerta de "Pedido en línea", y además te avisamos por WhatsApp.
+  </Step>
+  <Step title="Lo confirmas">
+    Revisas el pedido y lo aceptas (o lo aceptas y mandas a cocina de un toque). A partir de ahí sigue el flujo normal: preparando, listo, entregado.
+  </Step>
+</Steps>
+
+<Note>
+  Los pedidos en línea siempre requieren tu confirmación: nada entra a cocina sin que tú lo apruebes. Así controlas la carga y evitas pedidos fantasma.
+</Note>
+
+## Configurar tu menú en línea
+
+Desde la app: **Configuración → Mi negocio → Menú online**. Ahí defines:
+
+- **Activar/desactivar** la tienda y el modo (recibe pedidos / solo mostrar / cerrado).
+- **Domicilio y/o recoger**: cuáles aceptas.
+- **Pedido mínimo** y **tiempo estimado de preparación**.
+- **Política de envío**: sin envío, con repartidor externo, entrega propia, o cobro por distancia (con radio máximo de cobertura).
+- **Horarios** de la tienda y **pedidos programados**.
+- El **WhatsApp** donde quieres recibir el aviso de cada pedido.
+- Tus **ligas públicas** de menú y tienda, para **imprimir el QR** o **compartirlas** por redes/WhatsApp.
+
+<Note>
+  La primera activación de la tienda se hace desde el panel web ([mi.oden.food](https://mi.oden.food) → Tablero → "Activa tu tienda online"). Después toda la configuración del día a día vive en la app. Si te atoras, escríbenos por WhatsApp.
+</Note>
+
+### Qué producto se ve dónde
+
+Cada producto tiene interruptores independientes de visibilidad para **POS** y para **menú online**. Así puedes tener platillos solo para el mostrador, solo para pedidos en línea, o para ambos. Se configura en la ficha del producto (ver [Menú](/setup/menu)).
+
+## Ordenar desde la mesa con QR
+
+Tus clientes sentados pueden escanear un QR, ver el menú y mandar su pedido sin esperar al mesero. También pueden **llamar al mesero** o **pedir la cuenta** desde ahí.
+
+<Warning>
+  Hoy el QR de mesa se genera **por visita**: cuando abres la mesa con la opción "Abrir con QR" desde el POS, se crea un QR único para esa cuenta; al cerrarla, ese QR deja de servir. (Estamos trabajando en un QR fijo que puedas dejar pegado en la mesa de forma permanente.)
+</Warning>
+
+### Cómo se usa
+
+<Steps>
+  <Step title="Actívalo una vez">
+    En **Configuración → Mi negocio → Menú online**, activa el pedido desde la mesa (viene apagado por defecto). Requiere tener el menú online configurado.
+  </Step>
+  <Step title="Abre la mesa con QR">
+    En la pantalla de **Mesas**, al abrir una mesa elige "Abrir con QR". Oden genera el QR de esa cuenta: lo muestras en pantalla o lo imprimes para dejarlo en la mesa.
+  </Step>
+  <Step title="El cliente ordena">
+    Escanea, arma su pedido y lo envía. Sus platillos entran a la cuenta de esa mesa.
+  </Step>
+  <Step title="El mesero aprueba (recomendado)">
+    Por defecto, lo que ordena el cliente llega como "por aprobar": el mesero lo revisa y confirma antes de que vaya a cocina. Puedes desactivar la aprobación si prefieres que pase directo.
+  </Step>
+</Steps>
+
+<Tip>
+  El pedido por QR en mesa baja la carga de tus meseros en horas pico: el cliente ordena solo, y tu equipo se enfoca en preparar y entregar.
+</Tip>

@@ -1,0 +1,49 @@
+---
+title: "Primeros problemas al empezar con Oden POS"
+sidebarTitle: "Primeros pasos: dudas"
+description: "Soluciones a los tropiezos más comunes de los primeros días con Oden POS: no me deja hacer domicilio, falta el apartado de barra, separar POS y menú online, IVA inesperado y agregar meseros."
+---
+
+Estas son las dudas más comunes de los primeros días con Oden, con su solución rápida. Si algo no se resuelve aquí, escríbenos por WhatsApp.
+
+<AccordionGroup>
+  <Accordion title="No me deja hacer pedido a domicilio o para llevar (solo me da cobrar)">
+    Esos tipos de servicio están apagados en tu configuración. Actívalos en **Configuración → Mi negocio → Modo de operación**: enciende Domicilio, Para Llevar o Recoger según lo que ofrezcas. Al volver a Nueva Venta ya te aparecen esos tipos de orden.
+  </Accordion>
+
+  <Accordion title="Quiero un apartado de barra (o remolque) separado de cocina">
+    Crea una **estación** nueva: **Configuración → Operación → Cocina**, agrega la estación (ej. "Barra" o "Remolque") y asigna a esa estación las categorías que le tocan (bebidas, cervezas, etc.). Desde ese momento esos productos se separan solos en su propia pantalla o impresora de cocina.
+  </Accordion>
+
+  <Accordion title="Un producto no aparece en el POS (o no aparece en mi menú online)">
+    Cada producto tiene visibilidad **independiente** para POS y para menú online. Abre el producto en **Productos** y revisa los dos interruptores de visibilidad: enciende el que falte. Así decides qué se vende en mostrador, qué en línea, o ambos.
+  </Accordion>
+
+  <Accordion title="Al cobrar me aparece un 16% de IVA que yo no puse">
+    Tu cuenta está en modo "precios más IVA", que suma 16% encima del precio del menú. Si tus precios ya incluyen IVA, cambia a "IVA incluido" en **Configuración → Finanzas → Impuestos**. Si tienes duda, escríbenos y lo ajustamos en un minuto.
+  </Accordion>
+
+  <Accordion title="¿Cómo agrego a mis meseros?">
+    Hay dos caminos distintos: (1) **empleado con PIN** para que use la terminal del negocio, o (2) **comandero** para que tome órdenes desde su propio celular. Si tu mesero ya bajó la app y le sale "restringido", es el camino de comandero: **Configuración → Operación → Comanderos → Agregar**, y él escanea el QR o teclea el código. Detalle en [Empleados](/setup/employees).
+  </Accordion>
+
+  <Accordion title="El código para vincular el celular del mesero no funciona">
+    Los códigos de vinculación **expiran a las 24 horas**. Genera uno nuevo en **Configuración → Operación → Comanderos** y que el mesero lo use enseguida. El dispositivo ya vinculado no necesita repetirlo.
+  </Accordion>
+
+  <Accordion title="El QR de mesa: ¿lo pego en la mesa o lo imprimo cada vez?">
+    Por ahora el QR de mesa se genera **por visita** (al abrir la mesa con "Abrir con QR"), así que se imprime o se muestra cada vez. Estamos trabajando en un QR fijo para dejarlo pegado permanentemente. Ver [Pedidos en línea y QR](/operations/online-orders).
+  </Accordion>
+
+  <Accordion title="Mi logo no sale bien en el ticket">
+    Las impresoras térmicas imprimen en blanco y negro, sin color. Un logo con buen contraste y líneas gruesas sale mejor; los que tienen mucho detalle o degradados se ven manchados. Sube una versión simplificada en blanco y negro desde **Configuración → Operación → Tickets**.
+  </Accordion>
+
+  <Accordion title="¿Puedo administrar desde mi computadora?">
+    Sí. Entra a [**mi.oden.food**](https://mi.oden.food) con tu mismo correo y contraseña para trabajar tu menú (productos, categorías, modificadores, promociones) desde el navegador. La operación del día (órdenes, cobros, caja) y los reportes viven en la app.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  ¿Tu duda no está aquí? Escríbenos por WhatsApp y te respondemos el mismo día: [wa.me/5215644139541](https://wa.me/5215644139541?text=Necesito%20ayuda%20con%20Oden%20POS)
+</Note>

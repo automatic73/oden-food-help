@@ -1,0 +1,92 @@
+{
+  "projectType": "saas",
+  "projectName": "Oden POS",
+  "projectDescription": "Oden is a mobile-first point-of-sale system designed for restaurants and taquerías in Mexico, enabling order management, kitchen display, table control, and cash register operations from any iPhone or Android device.",
+  "theme": "almond",
+  "primaryColor": "#649d76",
+  "lightColor": "#10151d",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guía de Uso",
+        "groups": [
+          {
+            "group": "Introducción",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "pricing"
+            ]
+          },
+          {
+            "group": "Configuración",
+            "pages": [
+              "setup/account",
+              "setup/menu",
+              "setup/tables",
+              "setup/employees",
+              "setup/printers"
+            ]
+          },
+          {
+            "group": "Operaciones",
+            "pages": [
+              "operations/taking-orders",
+              "operations/kitchen-display",
+              "operations/payments",
+              "operations/cash-register",
+              "operations/tables-reservations"
+            ]
+          },
+          {
+            "group": "Gestión",
+            "pages": [
+              "management/reports",
+              "management/inventory",
+              "management/customers-loyalty",
+              "management/billing-cfdi"
+            ]
+          },
+          {
+            "group": "Ayuda",
+            "pages": [
+              "help/faq",
+              "help/offline-mode",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Mobile-first POS — works on any iPhone or Android without special hardware",
+    "Kitchen Display System (KDS) — orders routed to kitchen screens in real time",
+    "Offline-first operation with automatic sync when connectivity returns",
+    "Table management with drag-and-drop floor plan and real-time status",
+    "Split payments and partial refunds across multiple payment methods",
+    "Cash register with multi-cashier sessions and denomination counting",
+    "CFDI 4.0 electronic invoicing via QR code self-service",
+    "Public digital menu with QR code, customizable branding, and SEO",
+    "Customer loyalty program and CRM",
+    "Thermal printer support (Star Micronics and Bluetooth printers)",
+    "Multi-location (multi-sucursal) support",
+    "Reports: daily sales, top products, payment breakdown, employee performance"
+  ],
+  "publicApiSurface": [
+    "Supabase Auth — email/password registration and login for restaurant owners",
+    "Employee PIN login — quick access for cashiers and waiters",
+    "Products API — create, update, and delete menu items with images and modifiers",
+    "Orders API — create orders, update status (DRAFT → COMPLETED → REFUNDED), apply split payments",
+    "Tables API — manage floor plan, table status, and reservations",
+    "KDS API — real-time order routing to kitchen stations",
+    "Cash Session API — open/close sessions, record movements, perform cash counts",
+    "Reports API — sales by period, top products, payment methods breakdown",
+    "Customers API — create and manage customer profiles and loyalty points",
+    "CFDI Edge Function — generate and send CFDI 4.0 invoices via email",
+    "Public Menu endpoint — SEO-friendly menu page per tenant",
+    "Push Notification service — order-ready and reservation-reminder alerts",
+    "WhatsApp Notification service — trial reminders and marketing templates"
+  ]
+}

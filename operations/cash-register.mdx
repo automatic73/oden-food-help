@@ -1,0 +1,66 @@
+---
+title: "Caja registradora en Oden POS: turnos y corte de caja"
+sidebarTitle: "Caja Registradora"
+description: "Abre turnos con fondo inicial, registra entradas y salidas de efectivo, cuenta denominaciones MXN y genera el corte de caja en PDF con Oden POS."
+---
+
+El control de caja es una de las partes más importantes de la operación diaria. Oden POS lleva registro exacto de cada peso que entra y sale durante el turno: ventas por método de pago, propinas, gastos, retiros e ingresos de efectivo. Al cerrar, cuentas el efectivo por denominación y Oden te dice al instante si cuadró.
+
+<Note>
+  Oden requiere una **sesión de caja abierta** para operar: sin turno abierto no se pueden crear órdenes. Esto garantiza que toda venta quede registrada dentro de un turno y el corte siempre cuadre.
+</Note>
+
+## Abrir la caja
+
+<Steps>
+  <Step title="Ve a la sección Caja">
+    En la pantalla principal, toca **Caja**. Si no hay turno abierto, Oden te pedirá abrir uno.
+  </Step>
+  <Step title="Cuenta el fondo inicial por denominaciones">
+    Ingresa cuántos billetes y monedas tienes de cada denominación ($1,000, $500, $200, $100, $50 y $20 en billetes; $10, $5, $2, $1 y 50¢ en monedas). Oden suma el total automáticamente: ese es tu fondo de cambio.
+  </Step>
+  <Step title="Confirma la apertura">
+    Agrega una nota si quieres y confirma. El turno queda abierto con la hora exacta y el nombre de quien lo abrió, y Oden empieza a registrar todas las transacciones.
+  </Step>
+</Steps>
+
+## Movimientos de caja
+
+Durante el turno puedes registrar efectivo que entra o sale por razones distintas a una venta:
+
+- **Ingreso**: agregas dinero a la caja (por ejemplo, fondo extra para cambio).
+- **Gasto**: pagas algo del negocio con efectivo de la caja (proveedor, insumos).
+- **Retiro**: sacas efectivo de la caja (por ejemplo, para llevarlo al banco).
+
+Cada movimiento pide monto y descripción, así el historial siempre explica por qué el efectivo no coincide 1:1 con las ventas.
+
+<Tip>
+  Registra todos los gastos que pagas con efectivo de la caja, aunque sean chicos. Oden los considera en el corte para que el cuadre cierre sin diferencias inexplicables.
+</Tip>
+
+## Arqueo (conteo intermedio)
+
+Puedes hacer un **arqueo** a media jornada: cuentas el efectivo por denominaciones y Oden compara contra lo esperado **sin cerrar el turno**. Útil para detectar diferencias a tiempo o para cambios de cajero. Lo encuentras dentro de la sección Caja.
+
+## Cerrar el turno (corte de caja)
+
+<Steps>
+  <Step title="Toca Cerrar turno">
+    En la sección Caja, toca **Cerrar turno**. Verás el resumen del turno: ventas por método de pago, movimientos y el efectivo esperado.
+  </Step>
+  <Step title="Cuenta el efectivo por denominación">
+    Ingresa cuántos billetes y monedas tienes físicamente. Oden suma en tiempo real y compara contra lo esperado: te muestra si hay **sobrante** o **faltante**.
+  </Step>
+  <Step title="Confirma el cierre">
+    Si hay diferencia, puedes agregar una nota con la explicación. Confirma el cierre; esta acción no se puede deshacer.
+  </Step>
+  <Step title="Imprime el corte">
+    Al cerrar puedes **imprimir el corte** en tu impresora térmica, con ventas por método de pago, movimientos, conteo y diferencia. Desde la sección Caja también puedes **reimprimir el último corte** cuando lo necesites.
+  </Step>
+</Steps>
+
+<Note>
+  Próximamente podrás exportar el corte también en PDF para compartirlo por WhatsApp o correo. Por ahora, el corte se imprime en tu impresora térmica.
+</Note>
+
+El historial de cortes anteriores queda guardado: puedes consultar cualquier sesión pasada desde **Caja → Historial**, y ver el detalle de ventas de caja en **Reportes**.

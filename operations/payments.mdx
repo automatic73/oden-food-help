@@ -1,0 +1,76 @@
+---
+title: "Cobros y métodos de pago en Oden POS: guía completa"
+sidebarTitle: "Pagos"
+description: "Acepta efectivo, tarjeta, transferencia y métodos personalizados en Oden POS. Divide cuentas, registra propinas y emite recibos al instante."
+---
+
+Cobrar rápido y sin errores es tan importante como tomar bien la orden. Oden POS calcula el cambio automáticamente, acepta varios métodos en una misma cuenta, divide la nota entre comensales y registra todo en el turno de caja para que el corte cuadre sin sorpresas.
+
+## Métodos de pago
+
+<CardGroup cols={2}>
+  <Card title="Efectivo" icon="money-bill-wave" href="#cobrar-una-orden">
+    Ingresas el monto recibido y Oden calcula el cambio al instante, con atajos de billetes comunes.
+  </Card>
+
+  <Card title="Tarjeta" icon="credit-card" href="#cobrar-una-orden">
+    El cargo se procesa en tu terminal bancaria externa; en Oden registras el cobro para el corte y los reportes.
+  </Card>
+
+  <Card title="Transferencia" icon="mobile-screen" href="#cobrar-una-orden">
+    Pagos por SPEI o transferencia directa: el cliente transfiere y tú registras el monto.
+  </Card>
+
+  <Card title="Otros métodos" icon="ellipsis" href="#cobrar-una-orden">
+    Métodos personalizados (vales de despensa, crédito del negocio, etc.), con el nombre que quieras.
+  </Card>
+</CardGroup>
+
+Activa o desactiva métodos desde **Configuración → Finanzas → Métodos de pago**. Los cambios se reflejan de inmediato en la pantalla de cobro.
+
+<Note>
+  Oden no procesa el cargo de tarjeta: registra el pago para tu control, y el cobro físico lo hace tu terminal bancaria de siempre (Clip, Mercado Pago, la de tu banco, etc.). Por eso Oden no te cobra comisión por venta.
+</Note>
+
+## Cobrar una orden
+
+<Steps>
+  <Step title="Abre la orden">
+    Desde la pantalla principal o el mapa de mesas, abre la orden a cobrar y verifica los artículos.
+  </Step>
+  <Step title="Toca Cobrar">
+    Verás el resumen con el total a pagar.
+  </Step>
+  <Step title="Elige el método">
+    Efectivo, tarjeta, transferencia u otro método configurado.
+  </Step>
+  <Step title="Para efectivo: monto recibido">
+    Ingresa cuánto entregó el cliente (o usa los atajos de billetes). Oden muestra el cambio al instante.
+  </Step>
+  <Step title="Confirma">
+    El pago queda registrado, la orden se cierra y se genera el ticket: se imprime en tu impresora configurada, con QR de facturación si tienes CFDI activo.
+  </Step>
+</Steps>
+
+## Pagos con varios métodos
+
+Cuando el cliente paga parte en efectivo y parte con tarjeta (o cualquier combinación), usa **Múltiples métodos**: registras cada monto parcial y Oden descuenta lo aplicado hasta completar el total, en una sola transacción.
+
+## División de cuenta
+
+En la pantalla de cobro puedes dividir de varias formas:
+
+- **Partes iguales**: indicas cuántas personas son y Oden calcula el monto de cada quien.
+- **Montos personalizados**: cada quien paga una cantidad diferente.
+- **Cuentas separadas**: asignas artículos a cada cuenta y cobras cada una con su propio método.
+
+## Propinas
+
+Oden muestra botones de propina sugerida (10%, 15%, 20%) y opción de monto libre al cobrar. La propina queda registrada en el turno para tu control y reportes.
+
+- Si el cliente paga con tarjeta y la propina se ajusta después (como con muchas terminales), puedes **ajustar la propina** de la orden después del cobro.
+- Las propinas en efectivo también se registran para que el corte cuadre.
+
+## Reembolsos
+
+Los reembolsos (totales o parciales) se hacen desde el detalle de la orden cobrada y quedan registrados en el corte del turno. Paso a paso en [Tomar Órdenes → Reembolsos](/operations/taking-orders#reembolsos).

@@ -1,0 +1,96 @@
+---
+title: "Tomar órdenes en Oden POS: tipos, estados y reembolsos"
+sidebarTitle: "Tomar Órdenes"
+description: "Aprende a crear, modificar y gestionar órdenes en Oden POS. Cubre los cuatro tipos de orden, modificadores, notas especiales y estados del pedido."
+---
+
+Oden POS está diseñado para que cualquier miembro de tu equipo pueda tomar una orden en segundos desde su celular o tablet: abre la app, selecciona los productos y envía la comanda directo a cocina. En hora pico, esa velocidad marca la diferencia.
+
+## Tipos de orden
+
+Al crear una orden eliges el tipo, para que la comanda llegue bien etiquetada a cocina y los reportes queden ordenados:
+
+<CardGroup cols={2}>
+  <Card title="Mesa" icon="chair" href="#crear-una-orden">
+    El cliente come en el local. Seleccionas la mesa y el número de comensales; la orden aparece en el mapa en tiempo real.
+  </Card>
+
+  <Card title="Para Llevar" icon="bag-shopping" href="#crear-una-orden">
+    El cliente pide en mostrador y se lleva su pedido. Puedes capturar su nombre para llamarlo.
+  </Card>
+
+  <Card title="Pasar a Recoger" icon="clock" href="#crear-una-orden">
+    Pedido anticipado con hora programada para recoger.
+  </Card>
+
+  <Card title="Domicilio" icon="motorcycle" href="#crear-una-orden">
+    Entrega a domicilio: registras dirección, referencias y notas de entrega.
+  </Card>
+</CardGroup>
+
+Además existe el modo **Mostrador** para negocios de servicio rápido: la app se simplifica y toma órdenes directo, sin pedir tipo ni mesa. Los tipos disponibles dependen de lo que actives en **Configuración → Mi negocio → Modo de operación**.
+
+## Crear una orden
+
+<Steps>
+  <Step title="Entra con tu PIN">
+    Abre Oden y accede con tu PIN de 4 dígitos. Cada quien entra con el suyo para que las ventas queden bien atribuidas.
+  </Step>
+  <Step title="Nueva venta">
+    Toca **Nueva Venta**, elige el tipo de orden y, si es de mesa, selecciona la mesa (verde = libre) y el número de comensales.
+  </Step>
+  <Step title="Agrega productos">
+    Busca por nombre o navega por categorías. Al tocar un producto ajustas cantidad, eliges variante (chico/grande), seleccionas modificadores ("sin cebolla", "extra queso") y escribes una nota especial.
+  </Step>
+  <Step title="Revisa el carrito">
+    El carrito muestra artículos, cantidades y total. Puedes cambiar cantidades o quitar artículos ahí mismo.
+  </Step>
+  <Step title="Envía a cocina">
+    Toca **Enviar a cocina**. La comanda aparece al instante en el KDS o se imprime en cocina, con número consecutivo.
+  </Step>
+</Steps>
+
+## Modificar una orden
+
+Mientras no se haya cobrado puedes:
+
+- **Agregar artículos**: se suman a la orden y cocina ve los nuevos.
+- **Cambiar cantidades o quitar artículos** (según los permisos del empleado).
+- **Editar notas y modificadores** de un artículo.
+- **Cancelar la orden completa**: requiere permiso de cancelación; la app pide confirmación.
+
+## Estados de la orden
+
+| Estado | Qué significa |
+| --- | --- |
+| **Borrador** | Se está armando; aún no se envía a cocina. |
+| **Pendiente** | La orden quedó registrada y cocina ya puede verla. |
+| **Preparando** | Cocina está trabajando en ella. |
+| **Lista** | Todo preparado, lista para entregar o servir. |
+| **Completada** | Se cobró y cerró. Queda en el historial. |
+| **Cancelada** | Se canceló antes del cobro. |
+| **Reembolsada / Reembolso parcial** | Se devolvió el total o una parte después del cobro. |
+
+## División de cuenta
+
+Cuando un grupo quiere pagar por separado, al cobrar puedes dividir:
+
+- **En partes iguales**: indicas cuántas personas y Oden calcula el monto de cada quien.
+- **Por monto personalizado**: cada quien paga una cantidad distinta.
+- **Por cuentas separadas**: asignas artículos a cada cuenta y se cobran independientes.
+- **Múltiples métodos**: parte en efectivo y parte con tarjeta en el mismo cobro.
+
+Más detalle en [Pagos](/operations/payments).
+
+## Reembolsos
+
+Si necesitas devolver dinero después del cobro (requiere permiso de reembolsos):
+
+1. Abre la orden desde el historial.
+2. Toca **Reembolsar** y elige total o parcial (por artículos).
+3. Selecciona el motivo y el método de devolución.
+4. El reembolso queda registrado en la orden y en la sesión de caja del turno.
+
+<Note>
+  Oden registra el reembolso para tu control y contabilidad. Si el pago fue con tarjeta, la devolución del dinero al cliente se gestiona en tu terminal bancaria.
+</Note>

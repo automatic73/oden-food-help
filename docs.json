@@ -1,0 +1,76 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Oden",
+  "theme": "almond",
+  "favicon": "https://media.brand.dev/d1656b38-c72b-4c35-9afb-a0a4160ea8dc.png",
+  "colors": {
+    "primary": "#649d76",
+    "light": "#649d76",
+    "dark": "#10151d"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guía de Uso",
+        "groups": [
+          {
+            "group": "Introducción",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "pricing"
+            ]
+          },
+          {
+            "group": "Configuración",
+            "pages": [
+              "setup/account",
+              "setup/menu",
+              "setup/tables",
+              "setup/employees",
+              "setup/printers"
+            ]
+          },
+          {
+            "group": "Operaciones",
+            "pages": [
+              "operations/taking-orders",
+              "operations/kitchen-display",
+              "operations/payments",
+              "operations/cash-register",
+              "operations/tables-reservations",
+              "operations/inbox-whatsapp",
+              "operations/online-orders"
+            ]
+          },
+          {
+            "group": "Gestión",
+            "pages": [
+              "management/reports",
+              "management/inventory",
+              "management/customers-loyalty",
+              "management/billing-cfdi",
+              "management/promotions"
+            ]
+          },
+          {
+            "group": "Ayuda",
+            "pages": [
+              "help/faq",
+              "help/offline-mode",
+              "help/troubleshooting",
+              "help/primeros-pasos-problemas"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Empieza tu mes gratis",
+      "href": "https://wa.me/5215644139541?text=Hola!%20Quiero%20empezar%20con%20Oden%20POS"
+    }
+  }
+}
