@@ -14,7 +14,7 @@ El inventario de Oden funciona con **ingredientes y recetas**: registras tus ins
 
 1. **Registras tus ingredientes** con su unidad (kg, pieza, litro) y su stock actual.
 2. **Asignas recetas** a tus productos: qué ingredientes y en qué cantidad lleva cada platillo. Las recetas pueden variar por tamaño/variante e incluir los modificadores (por ejemplo, "extra queso" descuenta más queso).
-3. **Cada venta descuenta solo**: al completarse una orden, Oden descuenta los ingredientes de la receta. Si se hace un reembolso, el stock se revierte.
+3. **Cada venta descuenta solo**: al completarse una orden, Oden descuenta los ingredientes de la receta. Si reembolsas la orden **completa**, el stock se revierte; un reembolso **parcial** no devuelve insumos (se toma como ajuste de monto), así que si hace falta corrígelo con un conteo.
 4. **Te avisa cuando algo se acaba**: configuras un mínimo por ingrediente y Oden lo marca en alertas cuando el stock baja de ese nivel o se agota.
 
 <Note>
@@ -28,7 +28,7 @@ El inventario de Oden funciona con **ingredientes y recetas**: registras tus ins
     Desde la pantalla de inicio, entra a la sección **Inventario**.
   </Step>
   <Step title="Registra tus ingredientes">
-    Crea cada insumo con nombre, unidad de medida, stock actual y stock mínimo. Puedes organizarlos por categorías.
+    Crea cada insumo con nombre, categoría, unidad de medida, stock mínimo y costo. Para cargar el stock inicial, registra una **Entrada** (ver Movimientos, abajo): el formulario del insumo no pide la cantidad que tienes hoy.
   </Step>
   <Step title="Asigna recetas a tus productos">
     Entra a la receta de cada producto e indica qué ingredientes consume y en qué cantidad. Si el producto tiene variantes (chico/grande), cada variante puede tener su propia receta.
@@ -55,7 +55,7 @@ Cuando un ingrediente llega a su mínimo, aparece en las **alertas de inventario
 
 ## Marcar un producto como agotado
 
-Independiente del inventario, si un platillo se acabó puedes marcarlo **agotado** con un toque desde su ficha en **Productos**. Queda deshabilitado en la pantalla de órdenes (y oculto en tu menú digital) hasta que lo reactives.
+Independiente del inventario, si un platillo se acabó puedes marcarlo **agotado** desde el editor del producto en **Productos**. Queda deshabilitado en la pantalla de órdenes hasta que lo reactives, y en tu menú digital sigue apareciendo, marcado como no disponible.
 
 <Tip>
   ¿No quieres arrancar con todo el inventario de golpe? Empieza con tus 5-10 insumos más caros o críticos (carnes, quesos, desechables). Con eso detectas mermas donde más duele, y vas sumando ingredientes con el tiempo.
