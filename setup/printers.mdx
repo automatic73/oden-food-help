@@ -47,14 +47,27 @@ Oden POS se conecta a impresoras térmicas para imprimir tickets de cliente, com
   Para impresoras de red, la impresora y el celular o tablet deben estar conectados a la **misma red Wi-Fi**. Si están en redes diferentes (por ejemplo, una red de invitados), la app no podrá encontrarla.
 </Warning>
 
-## Qué se puede imprimir
+## Para qué sirve cada impresora
 
-- **Ticket de cliente**: detalle de productos, total y cambio. Se imprime al cobrar. Puede incluir el QR de facturación y el QR de tu club de lealtad.
-- **Pre-cuenta**: la cuenta para llevar a la mesa antes de cobrar.
-- **Comanda de cocina**: solo platillos y modificadores (sin precios), para que cocina prepare. Puede separarse por estación (parrilla, barra, etc.) y por comensal.
-- **Corte de caja**: el resumen del turno al cerrar la sesión de caja.
+Al configurarla eliges su **uso**, y hay tres:
 
-Configura qué imprime cada impresora desde su pantalla de edición. Si tienes cajón de dinero conectado a la impresora, Oden puede abrirlo automáticamente al cobrar.
+- **Cocina**: comandas de alimentos. Solo platillos y modificadores, sin precios. Se pueden separar por estación y por comensal.
+- **Barra**: comandas de bebidas.
+- **Recibos**: el ticket para el cliente, con detalle de productos, total y cambio. Puede incluir el QR de facturación y el de tu club de lealtad.
+
+Una misma impresora puede tener varios usos a la vez (por ejemplo Cocina y Barra si tienes una sola).
+
+La **pre-cuenta** y el **corte de caja** salen por la impresora de Recibos, no son un uso aparte que tengas que configurar.
+
+## El ticket al cobrar y el cajón de dinero
+
+Por defecto **el ticket del cliente no se imprime solo al cobrar**: se guarda, y en la pantalla que sale al terminar el cobro tienes el botón para imprimirlo cuando el cliente lo pida. Es así para no gastar papel en negocios que ya entregaron la pre-cuenta y casi nunca dan el segundo ticket.
+
+Si prefieres que salga solo, actívalo en la impresora de Recibos con **Imprimir recibo al cobrar**.
+
+<Warning>
+  Si tu **cajón de dinero está conectado a la impresora** (por el puerto DK) y esperas que se abra al cobrar, activa también **Imprimir recibo al cobrar**: el pulso que abre el cajón viaja dentro del ticket impreso. En pagos en efectivo Oden intenta abrirlo de todos modos, pero con el recibo activado es el camino que siempre funciona.
+</Warning>
 
 ## Logo y personalización del ticket
 

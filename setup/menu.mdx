@@ -14,7 +14,7 @@ Tu menú en Oden es el corazón del sistema: define qué vendes, a qué precio y
 
 Las categorías organizan tu menú en secciones (Tacos, Bebidas, Postres) para que tu equipo encuentre los productos rápido durante el servicio.
 
-1. Ve a la sección **Categorías** de la app.
+1. En la pantalla de **Productos**, abre el gestor de categorías.
 2. Toca **Nueva categoría**.
 3. Ponle nombre y, si quieres, un color e ícono para distinguirla.
 4. Guarda. La categoría aparece de inmediato en la pantalla de órdenes.
@@ -23,10 +23,14 @@ Puedes reordenarlas; el orden que definas es el que ve tu equipo al tomar órden
 
 ## Productos
 
-1. Ve a la sección **Productos** y toca **Agregar producto**.
+1. Ve a la sección **Productos** y toca **Nuevo producto**.
 2. Ingresa **nombre**, **precio** en MXN y la **categoría**. La **descripción** es opcional (aparece en tu menú digital).
 3. **Foto (opcional)**: toca el área de imagen para tomar una foto o elegir una de tu galería. Puedes vender sin foto y agregarla después.
-4. Guarda. El producto queda disponible al instante.
+4. Guarda. El producto queda listo para vender en la app al instante.
+
+<Warning>
+  El producto nace **visible en el POS pero no en tu menú online**. Si además lo quieres en tu carta digital pública, préndele el interruptor **Visible en menú online** dentro del producto. Es la causa más común de "subí el producto y no aparece en mi menú".
+</Warning>
 
 ## Modificadores
 
@@ -34,7 +38,7 @@ Los modificadores permiten personalizar un platillo al ordenarlo: "sin cebolla",
 
 1. Crea un **nuevo grupo** (por ejemplo "Extras" o "Término de la carne").
 2. Define si la selección es **obligatoria u opcional** y cuántas opciones puede elegir el cliente (mínimo y máximo).
-3. Agrega las opciones, cada una con su **ajuste de precio** ("Extra queso \+$10", "Sin cebolla $0").
+3. Agrega las opciones, cada una con su **ajuste de precio** (Extra queso, más 10 pesos; Sin cebolla, sin costo).
 4. Asigna el grupo a los productos que lo necesiten.
 
 <Tip>
@@ -43,13 +47,17 @@ Los modificadores permiten personalizar un platillo al ordenarlo: "sin cebolla",
 
 ## Variantes
 
-Las variantes son versiones del mismo producto con precio distinto, típicamente por tamaño: Agua fresca Chica ($20), Mediana ($28), Grande (\$35).
+Las variantes son versiones del mismo producto con precio distinto, típicamente por tamaño: Agua fresca chica en 20 pesos, mediana en 28 y grande en 35.
 
 Se configuran dentro del producto, en **Variantes**: agrega cada una con su nombre y precio. Cuando el cajero toca un producto con variantes, la app le pide elegir cuál. Si usas [inventario](/management/inventory), cada variante puede tener su propia receta.
 
 ## Marcar producto como agotado
 
-Si un producto se acabó a media jornada, no lo borres: márcalo como **agotado** desde su ficha. Queda deshabilitado en la pantalla de órdenes (y oculto en tu menú digital) hasta que lo reactives. No pierde historial ni configuración.
+Si un producto se acabó a media jornada, no lo borres: márcalo como **agotado** desde su ficha. Queda deshabilitado en la pantalla de órdenes hasta que lo reactives, sin perder historial ni configuración.
+
+<Note>
+  En tu **menú digital el producto sigue apareciendo**, marcado como no disponible: así el cliente ve que existe y vuelve por él. Si prefieres que desaparezca por completo de la carta pública, apaga su interruptor **Visible en menú online** (ver abajo).
+</Note>
 
 ## Visibilidad: POS y menú online por separado
 
