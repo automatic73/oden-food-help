@@ -31,3 +31,12 @@
 
 {/* Define what should and shouldn't be documented */}
 {/* Example: Don't document internal admin features */}
+
+## Oden Product Change Sync
+
+This repository is the source for `https://ayuda.oden.food`.
+
+- When a product change in `automatic73/oden-pos` changes a user-facing workflow, setting, label, or capability, update the relevant article here in a linked PR.
+- Keep instructions limited to verified, published behavior. Do not document planned work or internal implementation details.
+- Include the Oden issue/PR link in the documentation PR body so the product change and guide are traceable together.
+- After this PR merges to `main`, Mintlify publishes the guide automatically. The Oden PR must link this PR or the published article in its `Ayuda: actualizada: <URL>` declaration.
