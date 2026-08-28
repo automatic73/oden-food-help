@@ -15,11 +15,22 @@ Dos públicos, y el segundo sorprende:
    textual, a un restaurantero real.
 
 La consecuencia práctica del segundo: **un dato repartido en varios archivos es
-un dato que el agente reconstruye mal.** Pasó el 2026-08-28. Los comanderos no
-tenían guía propia (el tema vivía en ocho archivos), el bot fusionó dos formas
-de acceso distintas y le dijo a un cliente que los comanderos entran con PIN.
-La documentación decía lo contrario, con esas palabras, en una tabla. Cuando un
-tema se explica en más de dos lugares, merece guía propia.
+un dato que el agente reconstruye mal, y una media verdad aquí sale por WhatsApp
+como una instrucción entera.**
+
+Pasó el 2026-08-28, y la lección no es la que parecía. El bot le dijo a un
+cliente que los comanderos entran con PIN, y la documentación afirmaba lo
+contrario ("no un PIN") en una tabla. Al revisarlo contra el código, **el bot
+tenía razón**: el mesero sí entra con su PIN, sólo que después de vincular el
+aparato con un código. La tabla decía "no un PIN" para señalar que el PIN por sí
+solo no alcanza, y esa abreviación se leyó como una negación.
+
+Dos reglas salen de ahí:
+
+- Cuando un tema se explica en más de dos lugares, merece guía propia.
+- **No abrevies una secuencia en una negación.** "No es un PIN, es un código" se
+  convierte en una instrucción falsa. Escribe el orden completo: primero el
+  código vincula el aparato, después el PIN identifica a la persona.
 
 ## Idioma y tono
 
@@ -46,15 +57,21 @@ lee mal se queda sin poder trabajar:
 | **Comandero** | el mesero, desde **su propio celular** | **código de 6 caracteres o QR**, desde Configuración → Operación → Comanderos |
 | **Turno / asistencia** | registrar entrada y salida | se registra solo, al entrar con su PIN |
 
-Un comandero **no** entra con PIN. Si un mesero descargó la app en su celular y
-le sale "restringido", lo que necesita es vincularse como comandero. Los códigos
-de vinculación expiran a las **24 horas**.
+Las dos primeras son una secuencia, no una disyuntiva: el código vincula el
+**aparato** (una vez, y expira a las **24 horas**), y después cada mesero entra
+en ese aparato con **su** PIN. Un mesero con PIN pero sin celular vinculado no
+entra, y un celular vinculado sin empleados dados de alta no tiene con qué PIN
+entrar.
+
+Un celular sin vincular NO dice "restringido": muestra la pantalla de vincular y
+pide el código. "Acceso restringido" y "sin permisos" son mensajes de **rol**, y
+quien los ve tiene el celular funcionando y le falta un permiso.
 
 ### Otros nombres que van tal cual
 
 | Se escribe así | No así |
 |---|---|
-| **Nueva Venta** | "nueva orden", "nuevo pedido" |
+| **Nueva venta** (v minúscula, como en la app) | "Nueva Venta", "nueva orden", "nuevo pedido" |
 | **Enviar a cocina** | "mandar a cocina" |
 | pantalla de cocina (**KDS**) | "pantalla de chef", "display" |
 | **turno de caja** | "corte", "sesión de caja" |
@@ -64,6 +81,14 @@ de vinculación expiran a las **24 horas**.
 Las rutas del menú van con flecha y en negritas, con los niveles completos:
 **Configuración → Operación → Comanderos**. Un nivel de menos deja al lector
 buscando en una pantalla que no es.
+
+**Hay dos productos con menús distintos, y confundirlos es el error más fácil de
+cometer.** La app (iPad o celular) tiene Configuración con categorías y
+pestañas; el panel web de mi.oden.food tiene un menú lateral plano. La misma
+función se llama distinto en cada uno: en la app se regenera un código con
+**Regenerar Código** y en el panel con **Nuevo código**. Antes de citar un botón
+o una ruta, decide de cuál de los dos hablas, y dilo. Si la guía cubre los dos,
+sepáralos en secciones.
 
 ## Estilo de escritura
 

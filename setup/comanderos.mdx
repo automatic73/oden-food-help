@@ -1,6 +1,7 @@
 ---
 title: "Comanderos en Oden Food: que tus meseros tomen órdenes desde su celular"
-description: "Vincula el celular de cada mesero como comandero en Oden Food: código de 6 caracteres o QR, PIN por persona, y qué hacer cuando el código vence o dice restringido."
+sidebarTitle: "Comanderos"
+description: "Vincula el celular de cada mesero como comandero en Oden Food: código de vinculación o QR, PIN por persona, y qué hacer cuando el código vence o el celular se desvincula."
 ---
 
 Un **comandero** es el celular de un mesero levantando órdenes en la mesa. No
@@ -20,7 +21,7 @@ Es la confusión más común, y la que deja a un mesero parado sin poder trabaja
   entra con su propio PIN de 4 dígitos.
 
 Los dos hacen falta, en ese orden. Un mesero con PIN pero sin celular vinculado
-no puede entrar: le va a salir **"restringido"** o **"sin permisos"**. Y un
+no llega ni a la pantalla del PIN: la app le pide un código de vinculación. Y un
 celular vinculado sin empleados dados de alta no tiene con qué PIN entrar.
 
 <Note>
@@ -32,8 +33,11 @@ celular vinculado sin empleados dados de alta no tiene con qué PIN entrar.
 
 <Steps>
   <Step title="Crea el comandero">
-    En la app, ve a **Configuración → Operación → Comanderos** y toca para crear
-    uno nuevo.
+    Desde la app: **Configuración → Operación → Comanderos**.
+    Desde la computadora, en mi.oden.food: **Comanderos**, en el menú lateral.
+
+    Los dos caminos hacen lo mismo. Los nombres de los botones cambian un poco
+    entre uno y otro, y abajo se dicen los dos.
 
     Ponle un nombre que reconozcas después: la app sugiere algo como "Mesero 1"
     o "iPhone Entrada". Ese nombre es el que vas a ver en la lista cuando
@@ -43,6 +47,10 @@ celular vinculado sin empleados dados de alta no tiene con qué PIN entrar.
   <Step title="Genera el código">
     Oden te muestra un **código de vinculación de 6 caracteres** y su QR. Puedes
     escanear el QR desde el teléfono del mesero o teclear el código a mano.
+
+    El de un comandero nuevo son seis dígitos. El de uno regenerado lleva además
+    letras de la A a la F, así que ahí conviene el QR: se evita confundir un cero
+    con una O.
 
     <Warning>
       El código **vence a las 24 horas**. Genéralo cuando el mesero ya esté
@@ -55,8 +63,9 @@ celular vinculado sin empleados dados de alta no tiene con qué PIN entrar.
   </Step>
 
   <Step title="Que vincule el aparato">
-    Al abrir la app, que toque **Vincular dispositivo** y escriba el código, o
-    que escanee el QR desde la pantalla de Comanderos.
+    Al abrir la app, en la pantalla de inicio de sesión, que toque **Vincular
+    dispositivo** (está bajo "¿Eres mesero o staff?") y escriba el código, o que
+    escanee el QR desde la pantalla de Comanderos.
   </Step>
 
   <Step title="Que entre con su PIN">
@@ -73,15 +82,16 @@ con sus notas y tocar **Enviar a cocina**. Ver [Tomar órdenes](/operations/taki
 
 ## La lista de comanderos, y qué dice cada estado
 
-En **Configuración → Operación → Comanderos** ves todos los celulares dados de
-alta, con su estado y su última conexión:
+En la lista ves todos los celulares dados de alta, con su estado y su última
+conexión. Los cuatro estados son los mismos en la app y en el panel web, aunque
+dos se llaman distinto:
 
-| Estado | Qué significa |
-|---|---|
-| **Pendiente** | Ya lo creaste y el código está vivo, pero nadie lo ha usado todavía |
-| **Activo** | Vinculado y levantando órdenes |
-| **Inactivo** | Lo desactivaste tú. Sigue dado de alta pero no puede levantar órdenes |
-| **Revocado** | Se le retiró el acceso |
+| Estado | En la app | En el panel web | Qué significa |
+|---|---|---|---|
+| pendiente | **Pendiente** | **Esperando al celular** | Ya lo creaste y el código está vivo, pero nadie lo ha usado |
+| activo | **Activo** | **Activo** | Vinculado y levantando órdenes |
+| inactivo | **Inactivo** | **Pausado** | Lo desactivaste tú. Sigue dado de alta pero no levanta órdenes |
+| revocado | **Revocado** | **Revocado** | Se le retiró el acceso a ese aparato |
 
 También ves **última conexión** de cada uno, o **"Nunca se ha conectado"**. Ese
 dato es el que te dice si un mesero de verdad está usando el suyo o si el
@@ -91,13 +101,16 @@ celular quedó dado de alta y olvidado.
 
 Tres cosas parecidas que no son lo mismo:
 
-- **Cambiar estado** (activar o desactivar): el celular deja de levantar
+- **Desactivar** (**Pausar** en el panel web): el celular deja de levantar
   órdenes pero sigue vinculado. Para cuando un mesero se va de vacaciones y
   vuelve. Se reactiva con un toque, sin código nuevo.
 - **Renombrar**: sólo cambia la etiqueta de la lista. No afecta la vinculación.
-- **Eliminar**: se va de la lista, y es permanente. Es lo correcto cuando
-  alguien deja de trabajar contigo o cambia de teléfono.
-- **Regenerar código**: ver abajo, porque tiene una trampa.
+- **Revocar acceso**: le quita el acceso a ese aparato. Ojo, porque no tiene
+  vuelta fácil: **un comandero revocado no se reactiva con un toque**, hay que
+  generarle un código nuevo y vincularlo otra vez.
+- **Eliminar**: se va de la lista, y es permanente.
+- **Regenerar código** (**Nuevo código** en el panel web): ver abajo, porque
+  tiene una trampa.
 
 <Warning>
   **Regenerar el código de un comandero ya vinculado lo DESVINCULA.** No es "ver
@@ -124,19 +137,40 @@ Sólo el **dueño** o un **administrador** gestionan los comanderos: crearlos,
 activarlos, renombrarlos, regenerar su código o eliminarlos.
 
 <Note>
-  Un **gerente** sí ve la pantalla, pero le va a salir un error si intenta
-  administrar. No es una falla: es que dar de alta un comandero está reservado
-  al dueño y al administrador. Si tu gerente necesita agregar uno, tiene que
-  pedírtelo.
+  Un **gerente** sí ve la pantalla, pero le va a salir un error si intenta crear,
+  activar, renombrar o eliminar. No es una falla: eso está reservado al dueño y
+  al administrador.
 </Note>
+
+<Warning>
+  La excepción es **regenerar el código**, que un gerente sí puede hacer. Y es
+  justo la acción que desvincula el celular. Vale la pena que tus gerentes sepan
+  lo que hace ese botón antes de tocarlo.
+</Warning>
 
 ## Cuando algo no sale
 
 <AccordionGroup>
-  <Accordion title="Al mesero le sale 'restringido' o 'sin permisos'">
-    Su celular no está vinculado como comandero. Un PIN por sí solo no alcanza:
-    primero se vincula el aparato con el código, y después él entra con su PIN.
-    Sigue los pasos de [arriba](#vincular-el-celular-de-un-mesero).
+  <Accordion title="La app le pide un código y no lo deja entrar">
+    Ese celular no está vinculado todavía, o se desvinculó. Un PIN por sí solo no
+    alcanza: primero se vincula el aparato con el código, y después él entra con
+    su PIN. Sigue los pasos de [arriba](#vincular-el-celular-de-un-mesero).
+  </Accordion>
+
+  <Accordion title="Al mesero le sale 'Acceso restringido' o 'Sin permiso'">
+    Eso **no** es un problema del comandero: su celular está vinculado y
+    funcionando. Es un tema de **rol o permisos** de esa persona, y se arregla
+    desde su perfil en [Empleados](/setup/employees), no aquí.
+
+    <Warning>
+      No regeneres su código para "arreglarlo": eso desvincula el celular y lo
+      deja peor, sin tocar el permiso que en realidad falta.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Dice 'Dispositivo Pausado'">
+    Alguien lo desactivó. Actívalo desde la lista de comanderos y que el mesero
+    reintente. No hace falta código nuevo.
   </Accordion>
 
   <Accordion title="El código no funciona">
@@ -149,9 +183,10 @@ activarlos, renombrarlos, regenerar su código o eliminarlos.
   </Accordion>
 
   <Accordion title="El celular estaba vinculado y dejó de entrar">
-    Revisa el estado en la lista. Si dice **Inactivo**, actívalo. Si dice
-    **Pendiente**, es que alguien regeneró su código, y eso desvincula: hay que
-    volver a vincularlo con el código nuevo.
+    Revisa el estado en la lista. Si dice **Inactivo** o **Pausado**, actívalo.
+    Si dice **Pendiente** o **Esperando al celular**, es que alguien regeneró su
+    código, y eso desvincula: hay que volver a vincularlo con el código nuevo.
+    Si dice **Revocado**, genérale un código nuevo y que vuelva a vincular.
   </Accordion>
 
   <Accordion title="¿Cuántos comanderos puedo tener?">
@@ -166,7 +201,10 @@ activarlos, renombrarlos, regenerar su código o eliminarlos.
   </Accordion>
 
   <Accordion title="¿Funciona sin internet?">
-    Sí. Si se cae la señal se sigue vendiendo y los datos se sincronizan solos
-    cuando vuelve. Ver [Modo offline](/help/offline-mode).
+    Depende de si tienes activada la operación sin conexión. **No viene
+    encendida por default**: se activa negocio por negocio y se pide por
+    WhatsApp. Sin ella, crear una orden necesita internet. Con ella, se sigue
+    vendiendo y los datos se sincronizan solos cuando vuelve la señal. Ver
+    [Modo offline](/help/offline-mode).
   </Accordion>
 </AccordionGroup>
