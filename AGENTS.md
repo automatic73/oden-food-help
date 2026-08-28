@@ -109,7 +109,8 @@ No introduzcas un componente nuevo si uno de éstos hace el trabajo.
 
 ## Qué no se documenta aquí
 
-- Pantallas internas de administración (el back-office de Automatic73, sunny).
+- Pantallas internas de administración: esta doc es para quien usa Oden Food en
+  su restaurante, no para quien lo opera desde dentro.
 - Precios negociados, descuentos puntuales o acuerdos con un cliente concreto.
 - Números de teléfono internos, ids de WhatsApp, tokens o nombres de secretos.
   **Este repositorio es público.**
