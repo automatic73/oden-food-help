@@ -32,15 +32,17 @@ celular vinculado sin empleados dados de alta no tiene con qué PIN entrar.
 
 <Steps>
   <Step title="Crea el comandero">
-    Ve a **Configuración → Operación → Comanderos** y toca **Agregar comandero**.
+    En la app, ve a **Configuración → Operación → Comanderos** y toca para crear
+    uno nuevo.
 
-    Ponle un nombre que reconozcas después, como "Celular de Ana". Ese nombre es
-    el que vas a ver en la lista cuando quieras pausarlo o revisar cuándo se
-    conectó por última vez.
+    Ponle un nombre que reconozcas después: la app sugiere algo como "Mesero 1"
+    o "iPhone Entrada". Ese nombre es el que vas a ver en la lista cuando
+    quieras activarlo, renombrarlo o revisar su última conexión.
   </Step>
 
   <Step title="Genera el código">
-    Oden te muestra un **código de vinculación de 6 caracteres** y su QR.
+    Oden te muestra un **código de vinculación de 6 caracteres** y su QR. Puedes
+    escanear el QR desde el teléfono del mesero o teclear el código a mano.
 
     <Warning>
       El código **vence a las 24 horas**. Genéralo cuando el mesero ya esté
@@ -76,9 +78,9 @@ alta, con su estado y su última conexión:
 
 | Estado | Qué significa |
 |---|---|
-| **Esperando al celular** | Ya lo creaste y el código está vivo, pero nadie lo ha usado todavía |
-| **Activo** | Vinculado y en operación |
-| **Pausado** | Lo pausaste tú. El celular sigue dado de alta pero no puede levantar órdenes |
+| **Pendiente** | Ya lo creaste y el código está vivo, pero nadie lo ha usado todavía |
+| **Activo** | Vinculado y levantando órdenes |
+| **Inactivo** | Lo desactivaste tú. Sigue dado de alta pero no puede levantar órdenes |
 | **Revocado** | Se le retiró el acceso |
 
 También ves **última conexión** de cada uno, o **"Nunca se ha conectado"**. Ese
@@ -89,25 +91,44 @@ celular quedó dado de alta y olvidado.
 
 Tres cosas parecidas que no son lo mismo:
 
-- **Pausar**: el celular deja de levantar órdenes, pero sigue vinculado. Para
-  cuando un mesero se va de vacaciones y vuelve. Se reactiva con un toque, sin
-  código nuevo.
-- **Eliminar**: se va de la lista. Ese celular deja de poder levantar órdenes.
-  Es lo correcto cuando alguien deja de trabajar contigo o cambia de teléfono.
-- **Generar un código nuevo**: ver abajo, porque tiene una trampa.
+- **Cambiar estado** (activar o desactivar): el celular deja de levantar
+  órdenes pero sigue vinculado. Para cuando un mesero se va de vacaciones y
+  vuelve. Se reactiva con un toque, sin código nuevo.
+- **Renombrar**: sólo cambia la etiqueta de la lista. No afecta la vinculación.
+- **Eliminar**: se va de la lista, y es permanente. Es lo correcto cuando
+  alguien deja de trabajar contigo o cambia de teléfono.
+- **Regenerar código**: ver abajo, porque tiene una trampa.
 
 <Warning>
-  **Generar un código nuevo sobre un comandero ya vinculado lo DESVINCULA.** No
-  es "ver otra vez el código de antes": el celular vuelve a quedar esperando, y
-  el mesero tiene que vincularlo de nuevo. Si lo único que quieres es consultar
-  un código todavía vivo, usa **Ver código**.
+  **Regenerar el código de un comandero ya vinculado lo DESVINCULA.** No es "ver
+  otra vez el código de antes": el celular vuelve a quedar pendiente y el mesero
+  tiene que vincularlo desde cero.
+
+  La app sólo te avisa que "el código anterior dejará de funcionar", que suena
+  mucho más inofensivo de lo que es. Regenera únicamente si el comandero está
+  pendiente, o si de verdad quieres desconectar ese teléfono.
 </Warning>
+
+## Que cada mesero sólo toque sus mesas
+
+En la misma pantalla hay una opción: **Cada comandero sólo edita sus propias
+mesas**. Con eso activo, un mesero puede abrir y modificar las mesas que él
+abrió, y no las de sus compañeros.
+
+Si necesitas una excepción (un capitán de meseros que sí deba tocar todo), se da
+por persona desde el perfil de ese empleado, sin apagar la regla para los demás.
 
 ## Quién puede hacer todo esto
 
-Sólo el **dueño** o un **administrador** gestionan los comanderos. Un mesero o
-un cajero no ven esta pantalla: si alguien de tu equipo la necesita, tiene que
-pedírtelo a ti.
+Sólo el **dueño** o un **administrador** gestionan los comanderos: crearlos,
+activarlos, renombrarlos, regenerar su código o eliminarlos.
+
+<Note>
+  Un **gerente** sí ve la pantalla, pero le va a salir un error si intenta
+  administrar. No es una falla: es que dar de alta un comandero está reservado
+  al dueño y al administrador. Si tu gerente necesita agregar uno, tiene que
+  pedírtelo.
+</Note>
 
 ## Cuando algo no sale
 
@@ -128,9 +149,9 @@ pedírtelo a ti.
   </Accordion>
 
   <Accordion title="El celular estaba vinculado y dejó de entrar">
-    Revisa el estado en la lista. Si dice **Pausado**, actívalo. Si dice
-    **Esperando al celular**, es que alguien generó un código nuevo, y eso
-    desvincula: hay que volver a vincularlo.
+    Revisa el estado en la lista. Si dice **Inactivo**, actívalo. Si dice
+    **Pendiente**, es que alguien regeneró su código, y eso desvincula: hay que
+    volver a vincularlo con el código nuevo.
   </Accordion>
 
   <Accordion title="¿Cuántos comanderos puedo tener?">
