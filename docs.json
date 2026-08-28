@@ -28,6 +28,7 @@
               "setup/menu",
               "setup/tables",
               "setup/employees",
+              "setup/comanderos",
               "setup/printers"
             ]
           },
