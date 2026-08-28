@@ -1,0 +1,151 @@
+---
+title: "Comanderos en Oden Food: que tus meseros tomen órdenes desde su celular"
+description: "Vincula el celular de cada mesero como comandero en Oden Food: código de 6 caracteres o QR, PIN por persona, y qué hacer cuando el código vence o dice restringido."
+---
+
+Un **comandero** es el celular de un mesero levantando órdenes en la mesa. No
+necesitas comprar nada: el iPhone o Android que ya trae en la bolsa es el
+comandero.
+
+Esta guía es el camino completo, de principio a fin. Si sólo quieres resolver un
+atorón, ve directo a [Cuando algo no sale](#cuando-algo-no-sale).
+
+## Dos cosas distintas que se confunden
+
+Es la confusión más común, y la que deja a un mesero parado sin poder trabajar:
+
+- **El código vincula el CELULAR.** Se usa una sola vez, al principio, para que
+  ese aparato quede dado de alta en tu negocio.
+- **El PIN identifica a la PERSONA.** Una vez vinculado el celular, cada mesero
+  entra con su propio PIN de 4 dígitos.
+
+Los dos hacen falta, en ese orden. Un mesero con PIN pero sin celular vinculado
+no puede entrar: le va a salir **"restringido"** o **"sin permisos"**. Y un
+celular vinculado sin empleados dados de alta no tiene con qué PIN entrar.
+
+<Note>
+  El código es del celular, no de la persona. Si dos meseros se turnan el mismo
+  teléfono, se vincula una vez y cada uno entra con su PIN.
+</Note>
+
+## Vincular el celular de un mesero
+
+<Steps>
+  <Step title="Crea el comandero">
+    Ve a **Configuración → Operación → Comanderos** y toca **Agregar comandero**.
+
+    Ponle un nombre que reconozcas después, como "Celular de Ana". Ese nombre es
+    el que vas a ver en la lista cuando quieras pausarlo o revisar cuándo se
+    conectó por última vez.
+  </Step>
+
+  <Step title="Genera el código">
+    Oden te muestra un **código de vinculación de 6 caracteres** y su QR.
+
+    <Warning>
+      El código **vence a las 24 horas**. Genéralo cuando el mesero ya esté
+      contigo con su celular en la mano, no el día anterior.
+    </Warning>
+  </Step>
+
+  <Step title="Que el mesero instale la app">
+    En su propio celular, desde la App Store o Google Play.
+  </Step>
+
+  <Step title="Que vincule el aparato">
+    Al abrir la app, que toque **Vincular dispositivo** y escriba el código, o
+    que escanee el QR desde la pantalla de Comanderos.
+  </Step>
+
+  <Step title="Que entre con su PIN">
+    Ya vinculado el celular, cada mesero entra con **su PIN de 4 dígitos**, el
+    mismo que le pusiste al crear su perfil en **Empleados**.
+
+    Si todavía no le has creado el perfil, ese es el paso que falta: ver
+    [Empleados](/setup/employees).
+  </Step>
+</Steps>
+
+Listo. Ese mesero ya puede tocar **Nueva Venta**, elegir mesa, agregar productos
+con sus notas y tocar **Enviar a cocina**. Ver [Tomar órdenes](/operations/taking-orders).
+
+## La lista de comanderos, y qué dice cada estado
+
+En **Configuración → Operación → Comanderos** ves todos los celulares dados de
+alta, con su estado y su última conexión:
+
+| Estado | Qué significa |
+|---|---|
+| **Esperando al celular** | Ya lo creaste y el código está vivo, pero nadie lo ha usado todavía |
+| **Activo** | Vinculado y en operación |
+| **Pausado** | Lo pausaste tú. El celular sigue dado de alta pero no puede levantar órdenes |
+| **Revocado** | Se le retiró el acceso |
+
+También ves **última conexión** de cada uno, o **"Nunca se ha conectado"**. Ese
+dato es el que te dice si un mesero de verdad está usando el suyo o si el
+celular quedó dado de alta y olvidado.
+
+## Pausar, revocar o eliminar
+
+Tres cosas parecidas que no son lo mismo:
+
+- **Pausar**: el celular deja de levantar órdenes, pero sigue vinculado. Para
+  cuando un mesero se va de vacaciones y vuelve. Se reactiva con un toque, sin
+  código nuevo.
+- **Eliminar**: se va de la lista. Ese celular deja de poder levantar órdenes.
+  Es lo correcto cuando alguien deja de trabajar contigo o cambia de teléfono.
+- **Generar un código nuevo**: ver abajo, porque tiene una trampa.
+
+<Warning>
+  **Generar un código nuevo sobre un comandero ya vinculado lo DESVINCULA.** No
+  es "ver otra vez el código de antes": el celular vuelve a quedar esperando, y
+  el mesero tiene que vincularlo de nuevo. Si lo único que quieres es consultar
+  un código todavía vivo, usa **Ver código**.
+</Warning>
+
+## Quién puede hacer todo esto
+
+Sólo el **dueño** o un **administrador** gestionan los comanderos. Un mesero o
+un cajero no ven esta pantalla: si alguien de tu equipo la necesita, tiene que
+pedírtelo a ti.
+
+## Cuando algo no sale
+
+<AccordionGroup>
+  <Accordion title="Al mesero le sale 'restringido' o 'sin permisos'">
+    Su celular no está vinculado como comandero. Un PIN por sí solo no alcanza:
+    primero se vincula el aparato con el código, y después él entra con su PIN.
+    Sigue los pasos de [arriba](#vincular-el-celular-de-un-mesero).
+  </Accordion>
+
+  <Accordion title="El código no funciona">
+    Lo más probable es que haya vencido: los códigos duran **24 horas**. Genera
+    uno nuevo desde **Configuración → Operación → Comanderos** y que lo use
+    enseguida.
+
+    Revisa también que lo esté escribiendo completo y sin confundir caracteres
+    parecidos. Si el QR está a la mano, escanearlo evita ese problema.
+  </Accordion>
+
+  <Accordion title="El celular estaba vinculado y dejó de entrar">
+    Revisa el estado en la lista. Si dice **Pausado**, actívalo. Si dice
+    **Esperando al celular**, es que alguien generó un código nuevo, y eso
+    desvincula: hay que volver a vincularlo.
+  </Accordion>
+
+  <Accordion title="¿Cuántos comanderos puedo tener?">
+    Los que necesites, en los dos planes. El comandero móvil está incluido tanto
+    en Básico como en Pro, sin renta de equipo. Ver [Precios](/pricing).
+  </Accordion>
+
+  <Accordion title="¿El mesero puede cobrar desde su celular?">
+    Depende de su rol, no del comandero. Un rol de **Servicio (mesero)** toma
+    órdenes y cobra, pero no maneja caja ni ve reportes. Los roles y lo que
+    puede hacer cada uno están en [Empleados](/setup/employees).
+  </Accordion>
+
+  <Accordion title="¿Funciona sin internet?">
+    Sí. Si se cae la señal se sigue vendiendo y los datos se sincronizan solos
+    cuando vuelve. Ver [Modo offline](/help/offline-mode).
+  </Accordion>
+</AccordionGroup>
