@@ -12,11 +12,13 @@ Oden Food se conecta a impresoras térmicas para imprimir tickets de cliente, co
 
 ## Impresoras y conexiones compatibles
 
-- **Star Micronics** (por ejemplo TSP100, TSP650): por **red (LAN/Wi-Fi)** en iPhone, iPad y Android. Por **Bluetooth** solo en Android.
-- **Impresoras ESC/POS genéricas** (Xprinter, Qian, Epson TM, Rongta, Bixolon y similares): por **red (puerto 9100)** en todos los dispositivos; por **Bluetooth** o **USB** solo en Android.
+- **Star Micronics** (por ejemplo TSP100, TSP650): por **red (LAN/Wi-Fi)** en iPhone, iPad y Android. Por **Bluetooth** en Android, y en iPhone o iPad si el modelo usa Bluetooth de bajo consumo (BLE).
+- **Impresoras ESC/POS genéricas** (Xprinter, Qian, Epson TM, Rongta, Bixolon y similares): por **red (puerto 9100)** en todos los dispositivos. Por **Bluetooth** en Android, y en iPhone o iPad si el modelo usa BLE. Por **USB** solo en Android.
+
+Hay dos tipos de Bluetooth y los dos se ven igual en la caja: el **de bajo consumo (BLE)**, que iPhone y iPad sí alcanzan, y el **clásico**, que Apple no le permite usar a ninguna app. No hay forma de saber cuál es la tuya leyendo el modelo: se prueba. Si conectas la impresora y no aparece en la lista de Oden, es de las clásicas, y ahí la salida es una impresora de red.
 
 <Warning>
-  Si tu terminal es un iPhone o iPad, usa impresoras de **red (LAN/Wi-Fi)**. Las conexiones Bluetooth y USB solo están disponibles en dispositivos Android.
+  El Bluetooth en iPhone y iPad necesita la **versión 13 de Oden Food o más nueva**. Actualiza desde la App Store antes de intentarlo. El **USB** no está disponible en iPhone ni iPad, y no es cosa de la versión: Apple no deja que las apps hablen con impresoras por cable.
 </Warning>
 
 <Note>
@@ -33,7 +35,7 @@ Oden Food se conecta a impresoras térmicas para imprimir tickets de cliente, co
     Se abre el asistente de dos pasos: **Conectar impresora (1/2)** y **Configurar impresora (2/2)**.
   </Step>
   <Step title="Deja que Oden la encuentre">
-    La app escanea automáticamente la red (y Bluetooth/USB en Android) y te muestra las impresoras detectadas. Selecciona la tuya.
+    La app escanea automáticamente la red, el Bluetooth y (en Android) el USB, y te muestra las impresoras detectadas. Selecciona la tuya.
   </Step>
   <Step title="Si no aparece: conéctala por IP">
     Puedes ingresar la dirección IP de la impresora manualmente y tocar **Probar conexión**. La IP se obtiene imprimiendo la hoja de configuración de la impresora (normalmente manteniendo presionado el botón de alimentación al encenderla). El puerto típico es el **9100**.
