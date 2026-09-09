@@ -13,12 +13,12 @@ Oden Food se conecta a impresoras térmicas para imprimir tickets de cliente, co
 ## Impresoras y conexiones compatibles
 
 - **Star Micronics** (por ejemplo TSP100, TSP650): por **red (LAN/Wi-Fi)** en iPhone, iPad y Android. Por **Bluetooth** en Android, y en iPhone o iPad si el modelo usa Bluetooth de bajo consumo (BLE).
-- **Impresoras ESC/POS genéricas** (Xprinter, Qian, Epson TM, Rongta, Bixolon y similares): por **red (puerto 9100)** en todos los dispositivos. Por **Bluetooth** en Android, y en iPhone o iPad si el modelo usa BLE. Por **USB** solo en Android.
+- **Impresoras ESC/POS genéricas** (Xprinter, Qian, Epson TM, Rongta, Bixolon y similares): por **red (puerto 9100)** en todos los dispositivos. Por **Bluetooth** en Android, y en iPhone o iPad si el modelo usa BLE. Por **USB** en Android, y también desde una computadora Windows o Mac con el [Puente de Impresión](#impresora-usb-conectada-a-una-computadora).
 
 Hay dos tipos de Bluetooth y los dos se ven igual en la caja: el **de bajo consumo (BLE)**, que iPhone y iPad sí alcanzan, y el **clásico**, que Apple no le permite usar a ninguna app. No hay forma de saber cuál es la tuya leyendo el modelo: se prueba. Si conectas la impresora y no aparece en la lista de Oden, es de las clásicas, y ahí la salida es una impresora de red.
 
 <Warning>
-  El Bluetooth en iPhone y iPad necesita la **versión 13 de Oden Food o más nueva**. Actualiza desde la App Store antes de intentarlo. El **USB** no está disponible en iPhone ni iPad, y no es cosa de la versión: Apple no deja que las apps hablen con impresoras por cable.
+  El Bluetooth en iPhone y iPad necesita la **versión 13 de Oden Food o más nueva**. Actualiza desde la App Store antes de intentarlo. La **app** de iPhone y iPad no habla por cable con una impresora, y no es cosa de la versión: Apple no lo permite. Si tu impresora es USB, enchúfala a una computadora y usa el [Puente de Impresión](#impresora-usb-conectada-a-una-computadora): desde ahí el iPad le manda las comandas.
 </Warning>
 
 <Note>
@@ -48,6 +48,44 @@ Hay dos tipos de Bluetooth y los dos se ven igual en la caja: el **de bajo consu
 <Warning>
   Para impresoras de red, la impresora y el celular o tablet deben estar conectados a la **misma red Wi-Fi**. Si están en redes diferentes (por ejemplo, una red de invitados), la app no podrá encontrarla.
 </Warning>
+
+## Impresora USB conectada a una computadora
+
+Si tu impresora se conecta por **cable USB** a una computadora, funciona con Oden Food desde el punto de venta web, en [**mi.oden.food**](https://mi.oden.food). Necesitas instalar una vez el **Puente de Impresión**, un programa chico que corre en esa computadora y le pasa los tickets a la impresora.
+
+<Steps>
+  <Step title="Instala la impresora en la computadora">
+    Primero que Windows o Mac la reconozca, con el disco o el driver del fabricante. El Puente no reemplaza al driver: imprime a través de él.
+  </Step>
+  <Step title="Descarga el Puente de Impresión">
+    Entra a [**app.oden.food/descargas/print-bridge**](https://app.oden.food/descargas/print-bridge) y descarga la versión de tu sistema. Se instala una vez y arranca solo cada que enciendes la computadora.
+  </Step>
+  <Step title="Confirma que quedó conectado">
+    Abre el punto de venta en [**mi.oden.food**](https://mi.oden.food). En la barra de arriba debe decir **Puente de impresión: conectado** en verde.
+  </Step>
+  <Step title="Agrega la impresora con el botón Agregar USB">
+    En **Configuración → Operación → Impresoras**, toca **Agregar USB**. Oden te lista las impresoras que ve enchufadas y escribe el nombre por ti. Elige para qué se usa (cocina, barra, recibos) y haz una impresión de prueba.
+  </Step>
+</Steps>
+
+<Warning>
+  Usa el botón **Agregar USB** en lugar de escribir el nombre a mano. El nombre no es una etiqueta, es la llave con la que el Puente encuentra la impresora: si lo escribes distinto a como se llama en tu computadora, no sale papel.
+</Warning>
+
+### Descargar el Puente en Windows
+
+El instalador todavía no está firmado, así que Chrome y Windows lo marcan como sospechoso aunque no lo sea:
+
+- Si Chrome bloquea la descarga, abre el menú de tres puntos junto al archivo y elige **Conservar**.
+- Si al abrirlo Windows dice "protegió tu equipo", toca **Más información** y luego **Ejecutar de todas formas**.
+
+El Puente necesita **Windows 10 o más nuevo**. En Windows 7 y 8 el instalador corre sin quejarse pero el programa no arranca, y el punto de venta se queda en rojo sin explicar por qué.
+
+### Imprimir desde el celular en una impresora USB
+
+Una impresora por cable solo responde en la computadora donde está enchufada. Aun así, los pedidos que tomas desde el celular o la tablet **sí pueden salir por ella**: Oden le manda el ticket a esa computadora y ella lo imprime.
+
+Para que funcione, la computadora tiene que tener el punto de venta abierto y el Puente conectado. Si la apagas, los tickets de los meseros no salen. Si en tu negocio la caja se apaga a media operación, conviene tener además una impresora de red.
 
 ## Para qué sirve cada impresora
 
