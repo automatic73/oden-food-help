@@ -39,6 +39,43 @@ Oden incluye reservaciones para servicio a mesa, **desde el plan Básico**. Se c
 3. Opcionalmente asigna una **mesa**: quedará marcada como reservada para que nadie la ocupe por error.
 4. Guarda. La reservación aparece en el calendario y en el mapa.
 
+### Estados de una reservación
+
+El panel lateral de cada reservación te ofrece distintas acciones según el estado en que esté:
+
+| Estado | Qué puedes hacer desde el panel |
+|---|---|
+| **Pendiente** | Confirmar, No se presentó, Cancelar |
+| **Confirmada** | Sentar, No se presentó, Cancelar |
+| **Sentada** | Completar, Cancelar |
+| **Completada**, **Cancelada**, **No se presentó** | Editar |
+
+## Cobrarle a una reservación
+
+**La cuenta no se abre desde Reservaciones, se abre desde Mesas.** En el panel de la reservación no hay ningún botón para cobrar, en ningún estado: las acciones son las de la tabla de arriba. La cuenta vive en la mesa.
+
+<Steps>
+  <Step title="Asegúrate de que la reservación tenga mesa">
+    Si dice **Sin mesa asignada**, toca **Editar** y asígnale una. Sin mesa no hay dónde abrir la cuenta.
+  </Step>
+
+  <Step title="Ve a Mesas y toca la mesa reservada">
+    En el mapa de salón, la mesa aparece como **reservada** con el nombre del cliente.
+  </Step>
+
+  <Step title="Toca Abrir cuenta">
+    Es el primer botón del panel de la mesa. Si todavía no marcaste la llegada, el botón dice **Marcar llegada y abrir cuenta** y hace las dos cosas: pasa la reservación a **Sentada** y abre la orden. De ahí en adelante cobras como cualquier otra mesa.
+  </Step>
+</Steps>
+
+<Warning>
+  Una reservación en **Completada** ya no se puede cobrar ligada: ese estado cierra la visita. Si te quedó algo por cobrar de una mesa que ya completaste, hazlo desde **Nueva venta → Mostrador**, sin mesa.
+</Warning>
+
+<Note>
+  La mesa reservada **no aparece en Nueva venta**. Esa lista sólo ofrece mesas libres, a propósito, para que nadie le abra una segunda orden a una mesa que ya tiene visita. Entra por **Mesas**.
+</Note>
+
 ## Recordatorios por WhatsApp
 
 Oden envía automáticamente un recordatorio por WhatsApp al cliente antes de su reservación, con el nombre del negocio, fecha, hora y personas. Configuras con cuántas horas de anticipación se envía y puedes personalizar el mensaje.
