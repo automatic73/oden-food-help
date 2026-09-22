@@ -29,7 +29,7 @@ Por defecto el pago es **al recibir o al recoger**: el cliente elige cómo va a 
     Arma su pedido a domicilio o pickup y lo envía.
   </Step>
   <Step title="Te llega una alerta al POS">
-    El pedido aparece como **pendiente** con una alerta de "Pedido en línea", y además te avisamos por WhatsApp.
+    El pedido aparece como **pendiente** con una alerta de "Pedido en línea", y la app manda una notificación al celular de todos los dispositivos de tu negocio, aunque la tengan cerrada. Ver [Avisos de pedidos](/operations/notifications).
   </Step>
   <Step title="Lo confirmas">
     Revisas el pedido y lo aceptas (o lo aceptas y mandas a cocina de un toque). A partir de ahí sigue el flujo normal: preparando, listo, entregado.
@@ -49,7 +49,7 @@ Desde la app: **Configuración → Mi negocio → Menú online**. Ahí defines:
 - **Pedido mínimo** y **tiempo estimado de preparación**.
 - **Política de envío**: sin envío, con repartidor externo, entrega propia, o cobro por distancia (con radio máximo de cobertura).
 - **Horarios** de la tienda y **pedidos programados**.
-- El **WhatsApp** donde quieres recibir el aviso de cada pedido.
+- Tu **WhatsApp e Instagram públicos**, que aparecen como enlaces en la cabecera de tu menú. Son datos de contacto para tus clientes, no el destino de los avisos de pedidos.
 - Tus **ligas públicas** de menú y tienda, para **imprimir el QR** o **compartirlas** por redes/WhatsApp.
 
 <Note>
@@ -62,7 +62,9 @@ Cada producto tiene interruptores independientes de visibilidad para **POS** y p
 
 ## Ordenar desde la mesa con QR
 
-Tus clientes sentados pueden escanear el QR de su mesa, ver el menú y mandar su pedido sin esperar al mesero. También pueden **llamar al mesero** desde ahí.
+Tus clientes sentados escanean el QR de su mesa, ven el menú desde su celular y mandan su pedido sin que nadie vaya a tomárselo. Desde ahí también pueden **llamar al mesero**, **pedir la cuenta** y, si tienes Oden Pay, **pagar con tarjeta** sin esperar la terminal.
+
+De fábrica el mesero sigue en medio en dos momentos: abre la mesa, y aprueba cada pedido antes de que vaya a cocina. Los dos se pueden quitar con un interruptor, y los pasos de abajo dicen cuál es cuál. Empieza con los dos puestos y quítalos cuando le agarres confianza.
 
 Cada mesa tiene **un QR fijo**: codifica la mesa, no la visita. Lo imprimes una vez, lo pegas y ahí se queda. No caduca, y sigue sirviendo después de que cierras la cuenta y vuelves a abrir la mesa, así que no hay que reimprimirlo entre un comensal y el siguiente.
 
@@ -70,7 +72,9 @@ Cada mesa tiene **un QR fijo**: codifica la mesa, no la visita. Lo imprimes una 
 
 <Steps>
   <Step title="Activa el pedido desde la mesa">
-    En la app, en **Configuración → Mi negocio → Menú online**, enciende **Permitir pedidos desde la mesa**. Viene apagado, y necesita que ya tengas configurado tu menú online.
+    En la app, en **Configuración → Mi negocio → Menú online**, enciende **Permitir pedidos desde la mesa**. Viene apagado.
+
+    Antes hay que dejar tu tienda en modo **recibe pedidos**, en la sección "Configurar tu menú en línea" de esta misma guía. En ese modo Oden pide que aceptes al menos **domicilio** o **recoger**, aunque sólo quieras el QR de mesa: enciende el que menos te estorbe. Con la tienda en **solo mostrar** no se puede ordenar desde la mesa.
   </Step>
   <Step title="Imprime el QR de todas tus mesas">
     Al encender ese interruptor aparece abajo **QR fijo por mesa**, con tres formas de sacarlos. Las tres incluyen de una sola vez a todas tus mesas activas:
@@ -84,8 +88,10 @@ Cada mesa tiene **un QR fijo**: codifica la mesa, no la visita. Lo imprimes una 
   <Step title="Pega cada QR en su mesa">
     Cada código trae el nombre de la mesa a la que pertenece. Lo pegas una vez y no se cambia entre servicios.
   </Step>
-  <Step title="El mesero abre la mesa">
-    El QR pegado no abre la mesa por sí solo. El mesero la abre desde **Mesas**, igual que cualquier otra orden. Mientras la mesa esté cerrada, quien escanee ve el menú y el aviso "El mesero aún no abre tu mesa".
+  <Step title="El mesero abre la mesa, o deja que el cliente la abra">
+    El QR pegado no abre la mesa por sí solo. De fábrica la abre el mesero desde **Mesas**, igual que cualquier otra orden, y mientras esté cerrada quien escanee ve el menú con el aviso "El mesero aún no abre tu mesa".
+
+    Si quieres que nadie tenga que ir, enciende **Auto-abrir mesa al ordenar** en la pantalla del menú online: con eso el primero que escanea una mesa cerrada ve un botón **Abrir mesa** y la abre él mismo desde su celular. Viene apagado. Con el mesero abriendo tú decides qué mesas están en servicio, así que conviene dejarlo apagado mientras te acostumbras.
   </Step>
   <Step title="Deja ordenar al primero que escanea">
     Cuando la mesa la abrió el mesero, el primer cliente que escanea queda esperando permiso. La solicitud sale en el detalle de esa orden, en **Pedidos**, como **Solicitud de acceso a la mesa**: toca **Dejar ordenar**, o **Solo menú** si prefieres que nada más vea la carta. Es a propósito, para que nadie de otra mesa tome el control de la cuenta.
@@ -98,9 +104,9 @@ Cada mesa tiene **un QR fijo**: codifica la mesa, no la visita. Lo imprimes una 
   </Step>
 </Steps>
 
-<Tip>
-  ¿No quieres que el cliente espere al mesero? Enciende **Auto-abrir mesa al ordenar**, en esa misma pantalla. Con eso, el primero que escanea una mesa cerrada ve un botón **Abrir mesa** y la abre él mismo desde su celular. Viene apagado, y mientras te acostumbras conviene dejarlo así: con el mesero abriendo, tú decides qué mesas están en servicio.
-</Tip>
+<Warning>
+  Un pedido de mesa que está esperando aprobación **todavía no llegó a cocina**, así que no suena en la pantalla de cocina ni sale en la comanda. El aviso le llega al celular del mesero que tiene esa mesa, y sólo si trae su turno abierto con su PIN. Si nadie está viendo **Pedidos**, ese pedido se queda parado. Ver [Avisos de pedidos](/operations/notifications).
+</Warning>
 
 ### Mostrar el QR en pantalla, sin tenerlo pegado
 
