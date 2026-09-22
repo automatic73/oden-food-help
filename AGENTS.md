@@ -25,9 +25,14 @@ tenía razón**: el mesero sí entra con su PIN, sólo que después de vincular 
 aparato con un código. La tabla decía "no un PIN" para señalar que el PIN por sí
 solo no alcanza, y esa abreviación se leyó como una negación.
 
-Dos reglas salen de ahí:
+Tres reglas salen de ahí:
 
 - Cuando un tema se explica en más de dos lugares, merece guía propia.
+- **Cuando una página ofrece dos caminos, el recomendado se lleva el
+  procedimiento.** El agente repite lo que está en `<Steps>` y trata un `<Tip>`
+  como nota al pie, así que una recomendación puesta en un `<Tip>`, junto a los
+  pasos numerados del otro camino, sale por WhatsApp como si fuera opcional. Eso
+  pasó el 2026-09-17 con el QR de mesa (#600).
 - **No abrevies una secuencia en una negación.** "No es un PIN, es un código" se
   convierte en una instrucción falsa. Escribe el orden completo: primero el
   código vincula el aparato, después el PIN identifica a la persona.

@@ -41,7 +41,8 @@
               "operations/cash-register",
               "operations/tables-reservations",
               "operations/inbox-whatsapp",
-              "operations/online-orders"
+              "operations/online-orders",
+              "operations/notifications"
             ]
           },
           {
