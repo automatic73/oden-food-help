@@ -62,34 +62,48 @@ Cada producto tiene interruptores independientes de visibilidad para **POS** y p
 
 ## Ordenar desde la mesa con QR
 
-Tus clientes sentados pueden escanear un QR, ver el menú y mandar su pedido sin esperar al mesero. También pueden **llamar al mesero** o **pedir la cuenta** desde ahí.
+Tus clientes sentados pueden escanear el QR de su mesa, ver el menú y mandar su pedido sin esperar al mesero. También pueden **llamar al mesero** desde ahí.
 
-Hay dos formas de generar el QR, y puedes usar la que te acomode:
+Cada mesa tiene **un QR fijo**: codifica la mesa, no la visita. Lo imprimes una vez, lo pegas y ahí se queda. No caduca, y sigue sirviendo después de que cierras la cuenta y vuelves a abrir la mesa, así que no hay que reimprimirlo entre un comensal y el siguiente.
 
-- **QR fijo por mesa**: lo imprimes una vez y lo dejas pegado en la mesa para siempre. Puedes imprimirlos todos de golpe desde la configuración del menú online.
-- **QR por visita**: al abrir la mesa con "Abrir con QR" desde el POS se genera uno para esa cuenta, y deja de servir cuando la cierras.
-
-<Tip>
-  El QR fijo es lo práctico para el día a día: lo pegas una vez y ya. El de por visita sirve cuando quieres control extra sobre quién puede ordenar en esa mesa.
-</Tip>
-
-### Cómo se usa
+### Ponlo a funcionar
 
 <Steps>
-  <Step title="Actívalo una vez">
-    En **Configuración → Mi negocio → Menú online**, activa el pedido desde la mesa (viene apagado por defecto). Requiere tener el menú online configurado.
+  <Step title="Activa el pedido desde la mesa">
+    En la app, en **Configuración → Mi negocio → Menú online**, enciende **Permitir pedidos desde la mesa**. Viene apagado, y necesita que ya tengas configurado tu menú online.
   </Step>
-  <Step title="Abre la mesa con QR">
-    En la pantalla de **Mesas**, al abrir una mesa elige "Abrir con QR". Oden genera el QR de esa cuenta: lo muestras en pantalla o lo imprimes para dejarlo en la mesa.
+  <Step title="Imprime el QR de todas tus mesas">
+    Al encender ese interruptor aparece abajo **QR fijo por mesa**, con tres formas de sacarlos. Las tres incluyen de una sola vez a todas tus mesas activas:
+
+    - **Imprimir QR de todas las mesas**: los manda en fila a tu impresora de tickets.
+    - **Descargar hoja con todos los QR**: una sola imagen con todas las mesas, para mandarla a imprimir en papel o lona.
+    - **Descargar flyers de mesas**: un PDF con un flyer ya diseñado por cada mesa.
+
+    Si das de alta una mesa nueva más adelante, regresa aquí e imprime otra vez: la nueva ya viene incluida.
+  </Step>
+  <Step title="Pega cada QR en su mesa">
+    Cada código trae el nombre de la mesa a la que pertenece. Lo pegas una vez y no se cambia entre servicios.
+  </Step>
+  <Step title="El mesero abre la mesa">
+    El QR pegado no abre la mesa por sí solo. El mesero la abre desde **Mesas**, igual que cualquier otra orden. Mientras la mesa esté cerrada, quien escanee ve el menú y el aviso "El mesero aún no abre tu mesa".
+  </Step>
+  <Step title="Deja ordenar al primero que escanea">
+    Cuando la mesa la abrió el mesero, el primer cliente que escanea queda esperando permiso. La solicitud sale en el detalle de esa orden, en **Pedidos**, como **Solicitud de acceso a la mesa**: toca **Dejar ordenar**, o **Solo menú** si prefieres que nada más vea la carta. Es a propósito, para que nadie de otra mesa tome el control de la cuenta.
   </Step>
   <Step title="El cliente ordena">
-    Escanea, arma su pedido y lo envía. Sus platillos entran a la cuenta de esa mesa.
+    Arma su pedido y lo envía. Sus platillos entran a la cuenta de esa mesa. Los demás comensales escanean el mismo QR y piden unirse; al primero le llega la solicitud a su celular y los acepta.
   </Step>
-  <Step title="El mesero aprueba (recomendado)">
-    Por defecto, lo que ordena el cliente llega como "por aprobar": el mesero lo revisa y confirma antes de que vaya a cocina. Puedes desactivar la aprobación si prefieres que pase directo.
+  <Step title="El mesero aprueba cada pedido (recomendado)">
+    Por defecto lo que ordena el cliente llega como "por aprobar" y el mesero lo confirma antes de que vaya a cocina. Se apaga con **Requiere aprobación del mesero**, en la misma pantalla del menú online.
   </Step>
 </Steps>
 
 <Tip>
-  El pedido por QR en mesa baja la carga de tus meseros en horas pico: el cliente ordena solo, y tu equipo se enfoca en preparar y entregar.
+  ¿No quieres que el cliente espere al mesero? Enciende **Auto-abrir mesa al ordenar**, en esa misma pantalla. Con eso, el primero que escanea una mesa cerrada ve un botón **Abrir mesa** y la abre él mismo desde su celular. Viene apagado, y mientras te acostumbras conviene dejarlo así: con el mesero abriendo, tú decides qué mesas están en servicio.
 </Tip>
+
+### Mostrar el QR en pantalla, sin tenerlo pegado
+
+En la pantalla de **Mesas**, al abrir una mesa libre también aparece **Abrir con QR**: abre la mesa y te muestra su código en grande, para que el cliente lo escanee de tu tablet o para imprimirlo en ese momento.
+
+Es el mismo QR fijo de esa mesa, no uno distinto. Sirve para salir del paso el día que todavía no los tienes pegados, o cuando alguien despegó el suyo. No existe un QR de mesa que caduque al cerrar la cuenta.
