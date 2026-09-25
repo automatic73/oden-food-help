@@ -1,7 +1,7 @@
 ---
 title: "Promociones y descuentos en Oden Food"
 sidebarTitle: "Promociones"
-description: "Crea descuentos por porcentaje o monto fijo, cupones con código y happy hour por horario en Oden Food, y aplícalos automáticamente o al cobrar."
+description: "Crea descuentos por porcentaje o monto fijo, 2x1 y 3x2, cupones con código y happy hour por horario en Oden Food, y aplícalos automáticamente o al cobrar."
 ---
 
 Las promociones son descuentos planificados que armas una vez y Oden aplica según tus reglas. Sirven para llenar horas flojas (happy hour), mover producto (2x1) o premiar con cupón. Es distinto del programa de lealtad (puntos/sellos) y del descuento manual que teclea el cajero al cobrar.
@@ -10,11 +10,21 @@ Las promociones son descuentos planificados que armas una vez y Oden aplica seg�
 
 - **Porcentaje**: un porcentaje de descuento (por ejemplo 20% en bebidas).
 - **Monto fijo**: una cantidad fija de descuento (por ejemplo 30 pesos en tu primera orden).
+- **Compra X lleva Y**: el 2x1, el 3x2 y similares. Pones cuántas unidades **paga** el cliente y cuántas se lleva **gratis**: paga 1 y se lleva 1 gratis es un 2x1, paga 2 y se lleva 1 gratis es un 3x2.
 
-Cada promoción puede aplicar a la **orden completa**, a una **categoría** o a un **producto**.
+Cada promoción puede aplicar a la **orden completa**, a una **categoría** o a un **producto**. La de **Compra X lleva Y** es la excepción: ver abajo.
+
+### Cómo funciona el 2x1 (Compra X lleva Y)
+
+- **Solo aplica a categorías o productos, nunca a la orden completa.** Si eliges varias categorías o varios productos, cuentan como un solo grupo: dos rollos de categorías distintas arman un 2x1 si las dos categorías están en la promoción.
+- **Siempre se regala la unidad más barata** de las que entran en la promoción, sin importar en qué orden se capturaron. Si el cliente pide dos rollos de precios distintos, paga el más caro y el más barato sale gratis.
+- **La unidad gratis va al 100%.** No hay "la segunda al 50%": para eso usa una promoción de porcentaje.
+- **Se aplica por grupo completo.** En un 2x1, con 5 unidades se regalan 2 y la quinta se paga completa.
+- El **tope de descuento**, si le pones uno, también limita cuánto se regala.
+- En el ticket el descuento aparece como **un solo renglón** con el nombre de la promoción y el monto descontado, no como un producto en $0.
 
 <Note>
-  El 2x1 y el producto de cortesía todavía no se pueden armar como promoción automática. Mientras tanto se resuelven con un descuento de porcentaje o monto fijo, o con el descuento manual del cajero al cobrar.
+  El producto de cortesía (regalar un producto distinto al que se compra) todavía no se puede armar como promoción automática. Mientras tanto se resuelve con el descuento manual del cajero al cobrar.
 </Note>
 
 ## Cómo se activan
@@ -37,7 +47,7 @@ Cada promoción puede aplicar a la **orden completa**, a una **categoría** o a 
     Desde el inicio, entra a **Promociones** (disponible para administradores).
   </Step>
   <Step title="Nueva promoción">
-    Elige el tipo (porcentaje o monto fijo), a qué aplica y sus reglas (mínimo, vigencia, días y horas, usos).
+    Elige el tipo (porcentaje, monto fijo o **Compra X lleva Y**), a qué aplica y sus reglas (mínimo, vigencia, días y horas, usos).
   </Step>
   <Step title="Automática o con código">
     Define si se aplica sola o con un código de cupón.
@@ -51,6 +61,8 @@ Cada promoción puede aplicar a la **orden completa**, a una **categoría** o a 
 
 - Las **automáticas** se descuentan solas cuando la orden cumple las condiciones.
 - Las **de código** se aplican en la pantalla de cobro con "Aplicar cupón": el descuento se refleja al instante en el total.
+- **Solo se aplica una promoción por orden**, no se acumulan. Si hay varias automáticas que califican, se aplica la que da más descuento, y un cupón válido siempre gana sobre las automáticas.
+- Funciona igual en todos los canales: venta en mostrador, mesas, menú en línea y pedidos a domicilio.
 
 <Note>
   ¿Buscas premiar la recompra con puntos o sellos y tarjeta digital? Eso es el programa de [Lealtad](/management/customers-loyalty), que funciona aparte de las promociones.
