@@ -59,7 +59,7 @@ lee mal se queda sin poder trabajar:
 | Forma | Quién | Cómo entra |
 |---|---|---|
 | **Empleado con PIN** | usa la terminal del negocio (iPad o tablet) | su **PIN de 4 dígitos** |
-| **Comandero** | el mesero, desde **su propio celular** | **código de 6 caracteres o QR**, desde Configuración → Operación → Comanderos |
+| **Comandero** | el mesero, desde **su propio celular** | **código de 6 caracteres o QR**, desde la computadora en **panel.oden.food**: **Dispositivos → Comanderos** |
 | **Turno / asistencia** | registrar entrada y salida | se registra solo, al entrar con su PIN |
 
 Las dos primeras son una secuencia, no una disyuntiva: el código vincula el
@@ -81,19 +81,36 @@ quien los ve tiene el celular funcionando y le falta un permiso.
 | pantalla de cocina (**KDS**) | "pantalla de chef", "display" |
 | **turno de caja** | "corte", "sesión de caja" |
 | **comandero** | "mesero móvil", "app del mesero" |
-| **mi.oden.food/onboarding** | cualquier otra URL de registro |
+| **panel.oden.food/onboarding** | `mi.oden.food/onboarding` y cualquier otra URL de registro |
 
 Las rutas del menú van con flecha y en negritas, con los niveles completos:
 **Configuración → Operación → Comanderos**. Un nivel de menos deja al lector
 buscando en una pantalla que no es.
 
-**Hay dos productos con menús distintos, y confundirlos es el error más fácil de
-cometer.** La app (iPad o celular) tiene Configuración con categorías y
-pestañas; el panel web de mi.oden.food tiene un menú lateral plano. La misma
-función se llama distinto en cada uno: en la app se regenera un código con
-**Regenerar Código** y en el panel con **Nuevo código**. Antes de citar un botón
-o una ruta, decide de cuál de los dos hablas, y dilo. Si la guía cubre los dos,
-sepáralos en secciones.
+**Hay TRES superficies con menús distintos, y confundirlas es el error más
+fácil de cometer.** Eran dos hasta el 2026-09-29, y ahí está la trampa: el
+nombre viejo sigue sonando correcto y apunta a otra cosa.
+
+| Superficie | Dónde | Cómo se le dice aquí |
+|---|---|---|
+| La **app** | iPad o celular | "en la app". Tiene Configuración con categorías y pestañas |
+| El **panel** | `panel.oden.food` | "desde la computadora, en **panel.oden.food**". Tiene secciones con hojas dentro |
+| El **punto de venta web** | `mi.oden.food` | "el punto de venta web". Es donde se cobra desde la laptop, con PIN |
+
+El panel del dueño se mudó a su propio dominio el 2026-09-29. **`mi.oden.food`
+NO se jubiló**: ahí sigue el punto de venta web, con la sesión que se
+intercambia por PIN. Así que "el panel web" ya no es una forma de decir
+`mi.oden.food`, y escribirlo así manda al dueño al producto equivocado.
+
+Administrar (menú, reportes, clientes, promociones, equipo, cobros, la tienda
+en línea, el plan) es el **panel**. Cobrar, abrir caja y tomar una orden desde
+la computadora es el **punto de venta web**.
+
+La misma función se llama distinto en cada superficie: en la app se regenera un
+código con **Regenerar Código** y en el panel con **Nuevo código**; una sucursal
+se crea con **Nueva sucursal** en la app y con **Crear sucursal** en el panel.
+Antes de citar un botón o una ruta, decide de cuál de las tres hablas, y dilo.
+Si la guía cubre más de una, sepáralas en secciones.
 
 ## Estilo de escritura
 
