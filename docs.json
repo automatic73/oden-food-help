@@ -17,6 +17,7 @@
             "group": "Introducción",
             "pages": [
               "introduction",
+              "novedades",
               "quickstart",
               "pricing"
             ]
